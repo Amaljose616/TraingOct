@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>css flexbox</title>
+        <link rel="stylesheet" href="style3.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Store</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <ul class="social">
+                    <li><a href="" class="fb">Facebook</a></li>
+                    <li><a href="" class="tw">Twitter</a></li>
+                </ul>
+            </nav>
+            <div style="margin:20px;">
+            <span>Layout: </span>
+            <a href="#" class="stack">stack</a>
+            <a href="#" class="grid">Grid</a>
+            </div>
+            <section id="blocks">
+                <article>
+                    <h2>I pitty the fool...</h2>
+                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+                         below for those interested. Sections 1.10.32 and 1.10.33 from
+                          "de Finibus Bonorum et Malorum" by Cicero are also reproduced 
+                          in their exact original form, accompanied by English versions 
+                          from the 1914 translation by H. Rackham.</p>
+                </article>
+                <article>
+                    <h2>Get to the chopper</h2>
+                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced 
+                        below for those interested. Sections 1.10.32 and 1.10.33 from 
+                        "de Finibus Bonorum et Malorum" by Cicero are also reproduced 
+                        in their exact original form, accompanied by English versions 
+                        from the 1914 translation by H. Rackham.</p>
+                </article>
+                <article>
+                    <h2>I pitty the fool</h2>
+                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+                         below for those interested. Sections 1.10.32 and 1.10.33 from 
+                         "de Finibus Bonorum et Malorum" by Cicero are also reproduced 
+                         in their exact original form, accompanied by English versions 
+                         from the 1914 translation by H. Rackham.</p>
+                </article>
+                <article>
+                    <h2>what's a horse doing on a spaceship...?</h2>
+                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+                         below for those interested. Sections 1.10.32 and 1.10.33 from 
+                         "de Finibus Bonorum et Malorum" by Cicero are also reproduced 
+                         in their exact original form, accompanied by English versions 
+                         from the 1914 translation by H. Rackham.</p>
+                </article>
+            </section>
+        </div>
+        <script>
+            $("a.stack").on("click",function(){
+                $("article").addClass("stack");
+            });
+            $("a.grid").on("click",function(){
+                $("article").removeClass("stack");
+            });
+        </script>
+    </body>
+</html>
