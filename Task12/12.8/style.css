@@ -157,8 +157,8 @@ h4{
     margin-bottom: 0;
 }
 #contact form{
-    width: 40%;
-    margin-bottom: 400px;
+    width: 80%;
+    max-width: 400px;
     margin: 20px auto;
     text-align: center;
 
