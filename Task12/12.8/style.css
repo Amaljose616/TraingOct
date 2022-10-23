@@ -51,7 +51,7 @@ input,textarea{
 }
 h1,h2,h3,h4{
     color: #DDDBFF;
-    font-weight: nromal;
+    font-weight: normal;
 }
 p,a,li{
     color: #9893D8;
@@ -76,7 +76,7 @@ h4{
     grid-template-columns: repeat(8, 1fr);
     grid-gap:10px;
 }
-.ste-nav{
+.site-nav{
     margin: 0 20px;
 }
 .site-nav ul{
