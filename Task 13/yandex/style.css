@@ -85,6 +85,11 @@ input{
     margin-top: 1px;
     margin-bottom: 1px;
 }
+input:after{
+    content: "";
+    clear: both;
+    border: none;
+}
 svg{
     background:none
 }
@@ -98,7 +103,8 @@ svg{
     flex-direction: row;
     align-content: center;
     position: absolute;
-    left: 20vw;
+    left: 45%;
+    right: 45%;
 
     }
 
@@ -107,10 +113,16 @@ svg{
     align-items: center;
 }
 
-div ul li:hover{
+#featured ul li:hover{
     /* margin-top: -2px; */
     cursor: pointer;
     color: red;
+}
+#featured ul li:hover img{
+    transform: translateY(-4px);
+    cursor: pointer;
+    color: red;
+    transition-duration: .35s;
 }
 .footer{
     margin-top: -60px;
@@ -134,6 +146,13 @@ a:hover{
 footer ul span:hover{
 
     color: red;
+    
+}
+footer ul span:hover{
+
+    color: red;
+    position: fixed;
+    transform: none;
     
 }
 footer ul a{
@@ -162,6 +181,7 @@ svg{
     width: 30px;
     height: 35px;
     border-radius: 0 8px 8px 0 ;
+    opacity: .9;
 }
 /* span{
     text-align: center;
@@ -175,11 +195,15 @@ svg{
     cursor: pointer;
 }
 svg:hover{
-    background-color: rgb(240, 237, 237);
+    opacity: 5;
     cursor: pointer;
 }
 
-#featured .list li:hover{
+/* #featured .list li:hover img{
     margin-top: -2px;
+    cursor: pointer;
+} */
+
+.search img:hover{
     cursor: pointer;
 }
