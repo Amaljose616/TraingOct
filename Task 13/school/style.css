@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    height: 13vw;
+}
+.banner .school{
+    color: darkred;
+    position: absolute;
+    top: 3vw;
+    left: 32vw;
+    font-weight: 600;
+    font-size: 50px;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    list-style-type: none;
+    background-color: rgb(197 231 233);
+    padding: 14px;
+    
+}
+nav ul li a{
+    color: rgb(243, 43, 8);
+}
+.form img{
+    position: relative;
+    width: 100%;
+    height: 30vw;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20vw;
+    left: 27vw;
+}
+.info{
+    background-color: rgb(97, 97, 149);
+    padding: 30px;
+    border-radius:25px;
+    margin-right20px: 20px;
+}
+.info h2{
+    text-align: center;
+}
+.marks{
+    background-color: rgb(192, 113, 162);
+    padding: 30px;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+.marks h2{
+    text-align: center;
+}
+input{
+    border-radius: 5px;
+    border: 0.5px solid grey;
+    padding: 4px;
+}
+#submit{
+    /* transform: translateX(-22vw); */
+    transform: translateY(13vw);
+    padding: 10px;
+
+    color: rgb(4, 4, 4);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    background-color: rgb(200, 40, 56);
+}
+footer{
+    text-align: center;
+    bottom: 0;
+    color: red;
+    background-color: rgb(247, 197, 218);
+    padding: 20px;
+}
+@media screen and (max-width: 1400px){
+    .banner .school h1{
+        font-size: 60px;
+    }
+    .form img{
+        width:100%;
+        height:50vw;
+    }
+    .details{
+        left: 15vw;
+    }
+
+} 
+@media screen and (max-width:960px){
+    .banner .school h1{
+        font-size: 40px;
+    }
+    .form img{
+        width: 100%;
+        height: 70vw;
+    }
+    .details{
+        
+        height: 45vw;
+        width: 50vw;
+        top: 30vw;
+        
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .banner .school h1{
+        font-size: 35px;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        top: 95vw;
+        justify-items: center;
+        align-items: center;
+
+    }
+    .form img{
+        height: 200vw;
+    }
+    .info{
+        margin-bottom: 10px;
+    }
+    
+}
