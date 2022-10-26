@@ -133,3 +133,29 @@ footer{
     }
     
 }
+@media screen and (max-width:460px) {
+    .banner .school h1{
+        font-size: 20px;
+    }
+    .details{
+        
+        transform: translateY(25vw);
+    }
+    .form img{
+        height: 240vw;
+    }
+    .info{
+        top: 50vw;
+    }
+}
+@media screen and (max-width:375px){
+    .banner .school h1{
+        font-size: 20px;
+    }
+    .details{
+        transform: translateY(50vw);
+    }
+    .form img{
+        height:300vw;
+    }
+}
