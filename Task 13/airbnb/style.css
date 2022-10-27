@@ -156,18 +156,17 @@ body{
     .search1{
         display: flex;
         justify-content: space-around;
-        margin-top:10px ;
+        margin-top:16px ;
 
     }
     .searchbar1{
         background: #ffff;
-        margin: 0px;
-    padding: 10px;
-    padding-right: 2px;
-    border: 0.5px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
-    border-radius: 30px;
-    margin-left: -42px;
+        border: 0.5px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+        border-radius: 30px;
+        margin-left: -42px;
+        padding: -1px;
+        
     
     }
 .profile{
@@ -183,13 +182,19 @@ body{
 }
 
 .host{
-    margin-top: 20px;
+    margin-top: 23px;
+    font-size: 15px;
+    margin-left: 50px;
 }
 .global{
     margin-top: 20px;
+    margin-right: -9px;
+    ;
 }
 .airbnb{
     margin-top: 13px;
+    margin-right:4%;
+    margin-left: 12px;
 }
 /* .text1{
     margin-top: 1px;
@@ -197,6 +202,10 @@ body{
 } */
 .text1 span {
     margin: 5px;
+    margin-left:15px ;
+    font-size: 1.1em;
+    
 }
+
     
 }
