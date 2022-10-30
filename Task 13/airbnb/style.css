@@ -1131,13 +1131,15 @@ body {
 
 
 @media screen and (min-width:550px) {
-   .ads{
-    display: flex;
+   /* .ads{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
     flex-wrap: wrap;
-   }
-   .first, .second{
-    width: 20vw;
-    height: 20vw;
-    gap: 20vw;
-   }
+   } 
+   .ad1{
+    flex-grow: 1;
+    
+   } */
+   
 }
