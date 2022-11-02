@@ -55,7 +55,8 @@ header {
 .signin img {
     width: 25px;
     height: 18px;
-    margin-left: 10px;
+    margin-left: 13px;
+    margin-bottom: -2px;
 }
 
 .signin p {
@@ -151,7 +152,7 @@ header {
     .list {
         display: flex;
         align-items: center;
-        gap: 14px;
+        gap: 13px;
     }
 
     .list div {
@@ -178,7 +179,12 @@ header {
 
 @media screen and (min-width:1080px) {
     .header1{
-        padding-top: 6px
+        padding-top: 7px
+    }
+    .azure{
+        gap: 25px;
+        width: 97.02px;
+        height: 27px;
     }
     .right {
         display: none;
@@ -187,8 +193,9 @@ header {
     .right1 {
         display: flex;
         align-items: center;
-        gap: 21px;
+        gap: 14px;
         margin-right: 13px;
+    
     }
 
     .search1 {
@@ -215,10 +222,71 @@ header {
         background-color: #89c402;
         border: none;
         border-radius: 4px;
-        font-size: 13px;
+        font-size: 12px;
     }
     .right1 div{
         font-size: 13px;
+        white-space: nowrap;
     }
 
 }
+@media screen and (min-width:1081px){
+    .sales{
+        white-space: wrap;
+    }
+    .sales1{
+        white-space: wrap;
+    }
+    .search2{
+        white-space: nowrap;
+        width: 89.47px;
+        height: 32px;
+        margin: 0 6px;
+        padding: 9px;
+    }
+    .header1{
+        padding-bottom: 10px;
+    }
+}
+@media screen and (min-width:1324px) {
+   .header1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 7px;
+   } 
+}
+
+.explore img{
+    width: 12px;
+    height: 12px;
+    
+    
+}
+.explore{
+    background: #0078D4;
+    display: flex;
+    height: 67px;
+    justify-content: center;
+    align-items: center;
+    
+    /* align-itepadding: 120px 0px;ms: center;
+    justify-content: center; */
+}
+.explore a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 14px;
+    /* width:290px;
+    height: 42px; */
+    text-align: center;
+}
+.explore a:hover{
+    text-decoration: underline;
+    
+}
+@media  screen and (min-width:506px) {
+    .explore{
+        height: 48px;
+    }
+}
+    
