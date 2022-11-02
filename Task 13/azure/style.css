@@ -1,22 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: myfont;
     src: url(https://azurecomcdn.azureedge.net/cvt-63c12051016796d92bcf4bc20b4881057475e6dfa4937c29c9e16054814ab47d/fonts/segoe-ui/variable/SegoeUI-Roman-VF_web.woff2);
 }
-body{
+
+body {
     font-family: myfont;
 }
-header{
+
+header {
     display: flex;
-    justify-content: space-around; 
-    padding:12px;
+    justify-content: space-around;
+    padding: 12px;
     align-items: center;
 }
-.burger{
+
+.burger {
     display: flex;
     align-items: center;
     /* gap: 27px; */
@@ -26,16 +30,19 @@ header{
     /* justify-content: space-evenly; */
     gap: 15px;
 }
-.burger svg{
+
+.burger svg {
     width: 19px;
     height: 18px;
 }
-.burger p{
+
+.burger p {
     width: 54.02px;
     height: 24px;
     font-size: 18px;
 }
-.signin{
+
+.signin {
     display: flex;
     align-items: center;
     white-space: nowrap;
@@ -44,12 +51,14 @@ header{
     justify-content: space-evenly;
     align-content: stretch;
 }
-.signin img{
+
+.signin img {
     width: 25px;
     height: 18px;
     margin-left: 10px;
 }
-.signin p{
+
+.signin p {
     font-size: 14px;
     width: 82.48px;
     height: 54px;
@@ -57,90 +66,159 @@ header{
     padding-bottom: 41px;
     margin-left: 11px;
 }
-.microicon{
+
+.microicon {
     display: flex;
     align-items: center;
-    
+
 }
-.microicon svg{
+
+.microicon svg {
     width: 32px;
     height: 32px;
 }
-.header1{
+
+.header1 {
     display: none;
-} 
+}
+
+.right1 {
+    display: none;
+}
 
 @media screen and (min-width:768px) {
-    header{
+    header {
         display: none;
     }
-    .header1{
+
+    .header1 {
         display: flex;
         justify-content: space-between;
     }
-    .part3{
+
+    .part3 {
         display: flex;
         align-items: center;
         width: 99.45px;
         height: 54px;
         gap: 25px;
     }
-    .part3 svg{
+
+    .part3 svg {
         width: 27px;
         height: 54px;
         background: transparent;
         border: none;
-        
+        transform: translateX(10px);
+
     }
-    .part3 div{
+
+    .part3 div {
         font-size: 13px;
+        transform: translateX(3px);
     }
+
     /* .part3 button{
         border: none;
         background-color: white;
         background: transparent;
     } */
-    .part1{
+    .part1 {
         display: flex;
         align-items: center;
         padding-top: 3px;
         padding-left: 12px;
         gap: 19px;
     }
-    .azure{
+
+    .azure {
         display: flex;
         width: 83.02px;
         height: 27px;
         align-items: center;
         gap: 10px;
     }
-    .azure svg{
+
+    .azure svg {
         width: 24px;
         height: 25.25px;
     }
-    .azure p{
+
+    .azure p {
         font-size: 16px;
-    } 
-    .list{
+    }
+
+    .list {
         display: flex;
         align-items: center;
         gap: 14px;
     }
-    .list div{
+
+    .list div {
         font-size: 13px;
     }
-    .part2{
+
+    .part2 {
         width: 30px;
         height: 44px;
         display: flex;
         align-items: center;
     }
-    .part2 img{
+
+    .part2 img {
         width: 14px;
         height: 14px;
     }
-    .right{
+
+    .right {
         display: flex;
         align-items: center;
     }
+}
+
+@media screen and (min-width:1080px) {
+    .header1{
+        padding-top: 6px
+    }
+    .right {
+        display: none;
+    }
+
+    .right1 {
+        display: flex;
+        align-items: center;
+        gap: 21px;
+        margin-right: 13px;
+    }
+
+    .search1 {
+        display: flex;
+        width: 120px;
+        height: 32px;
+        justify-content: space-between;
+        align-items: center;  
+        border-radius: 4px; 
+        background-color: #f8f9fa;
+        padding: 5px 24px 5px 12px; 
+        border: 0.25px solid rgb(0 0 0 / 10%);    
+    }
+    .search1 img{
+        width: 14px;
+        height: 14px;
+    }
+    .search2{
+        white-space: wrap;
+        width: 63.06px;
+        height: 44px;
+        padding: 9px;
+        margin: 0px 6px;
+        background-color: #89c402;
+        border: none;
+        border-radius: 4px;
+        font-size: 13px;
+    }
+    .right1 div{
+        font-size: 13px;
+    }
+
 }
