@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(https://azurecomcdn.azureedge.net/cvt-63c12051016796d92bcf4bc20b4881057475e6dfa4937c29c9e16054814ab47d/fonts/segoe-ui/variable/SegoeUI-Roman-VF_web.woff2);
+}
+
+body {
+    font-family: myfont;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+}
+
+.burger {
+    display: flex;
+    align-items: center;
+    /* gap: 27px; */
+    width: 119px;
+    height: 45.5px;
+    margin-left: 12px;
+    /* justify-content: space-evenly; */
+    gap: 15px;
+}
+
+.burger svg {
+    width: 19px;
+    height: 18px;
+}
+
+.burger p {
+    width: 54.02px;
+    height: 24px;
+    font-size: 18px;
+}
+
+.signin {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: 130px;
+    height: 54px;
+    justify-content: space-evenly;
+    align-content: stretch;
+}
+
+.signin img {
+    width: 25px;
+    height: 18px;
+    margin-left: 13px;
+    margin-bottom: -2px;
+}
+
+.signin p {
+    font-size: 14px;
+    width: 82.48px;
+    height: 54px;
+    padding: 20px;
+    padding-bottom: 41px;
+    margin-left: 11px;
+}
+
+.microicon {
+    display: flex;
+    align-items: center;
+
+}
+
+.microicon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.header1 {
+    display: none;
+}
+
+.right1 {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    header {
+        display: none;
+    }
+
+    .header1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .part3 {
+        display: flex;
+        align-items: center;
+        width: 99.45px;
+        height: 54px;
+        gap: 25px;
+    }
+
+    .part3 svg {
+        width: 27px;
+        height: 54px;
+        background: transparent;
+        border: none;
+        transform: translateX(10px);
+
+    }
+
+    .part3 div {
+        font-size: 13px;
+        transform: translateX(3px);
+    }
+
+    /* .part3 button{
+        border: none;
+        background-color: white;
+        background: transparent;
+    } */
+    .part1 {
+        display: flex;
+        align-items: center;
+        padding-top: 3px;
+        padding-left: 12px;
+        gap: 19px;
+    }
+
+    .azure {
+        display: flex;
+        width: 83.02px;
+        height: 27px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .azure svg {
+        width: 24px;
+        height: 25.25px;
+    }
+
+    .azure p {
+        font-size: 16px;
+    }
+
+    .list {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+    }
+
+    .list div {
+        font-size: 13px;
+    }
+
+    .part2 {
+        width: 30px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    .part2 img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .header1{
+        padding-top: 7px
+    }
+    .azure{
+        gap: 25px;
+        width: 97.02px;
+        height: 27px;
+    }
+    .right {
+        display: none;
+    }
+
+    .right1 {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-right: 13px;
+    
+    }
+
+    .search1 {
+        display: flex;
+        width: 120px;
+        height: 32px;
+        justify-content: space-between;
+        align-items: center;  
+        border-radius: 4px; 
+        background-color: #f8f9fa;
+        padding: 5px 24px 5px 12px; 
+        border: 0.25px solid rgb(0 0 0 / 10%);    
+    }
+    .search1 img{
+        width: 14px;
+        height: 14px;
+    }
+    .search2{
+        white-space: wrap;
+        width: 63.06px;
+        height: 44px;
+        padding: 9px;
+        margin: 0px 6px;
+        background-color: #89c402;
+        border: none;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    .right1 div{
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+}
+@media screen and (min-width:1081px){
+    .sales{
+        white-space: wrap;
+    }
+    .sales1{
+        white-space: wrap;
+    }
+    .search2{
+        white-space: nowrap;
+        width: 89.47px;
+        height: 32px;
+        margin: 0 6px;
+        padding: 9px;
+    }
+    .header1{
+        padding-bottom: 10px;
+    }
+}
+@media screen and (min-width:1324px) {
+   .header1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 7px;
+   } 
+}
+
+.explore img{
+    width: 12px;
+    height: 12px;
+    
+    
+}
+.explore{
+    background: #0078D4;
+    display: flex;
+    height: 67px;
+    justify-content: center;
+    align-items: center;
+    
+    /* align-itepadding: 120px 0px;ms: center;
+    justify-content: center; */
+}
+.explore a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 14px;
+    /* width:290px;
+    height: 42px; */
+    text-align: center;
+    font-weight: bold;
+    margin: 0 19px;
+}
+.explore a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+.explore a:hover img{
+    transform: translateX(10px);
+}
+.right1 div:hover{
+           text-decoration: underline;
+           cursor: pointer;
+}
+.search2:hover{
+    text-decoration: underline;
+}
+.list div:hover{
+    text-decoration: underline;
+}
+.azure p:hover{
+    text-decoration: underline;
+}
+@media  screen and (min-width:506px) {
+    .explore{
+        height: 48px;
+    }
+}
+
+/* BANNER */
+
+.content1{
+    font-size: 20px;
+    color: #50e6ff;
+    text-align: center;
+    width: 98%;
+    font-weight: bold;
+}
+.content2{
+    font-size: 54px;
+    color: #f4f5f6;
+    text-align: center;
+    /* width: 295px; */
+    font-weight: bold;
+    line-height: 62px;
+    padding-bottom: 20px;
+}
+
+ .banner1{
+    padding:0px 15px ;
+    background-image: url(https://azurecomcdn.azureedge.net/cvt-4e9cef982775d2c18f86ab001a4bb46b72b9ca2382c0e91353156a4e71e774d7/images/page/home/ignite-hero-mobile.webp );
+    background-repeat: no-repeat;
+    /* align-content: center; */
+    /* height: 715.3px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    position: relative;
+    background-position: 60% 50%;
+    object-fit: cover;
+    gap: 3px;
+    padding-top: 59px;
+
+ }   
+ .content3{
+    font-size: 18px;
+    color: #f8f9fa;
+    text-align: center;
+    padding-bottom: 18px;
+ }
+ .content4{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 15px;
+    row-gap: 10px;
+    padding-bottom: 61px;
+    /* padding-left: 23px;
+    padding-right: 23px; */
+    width: 95%;
+    margin-left: 2.5%;
+ }
+ .get{
+    height: 43px;
+    color: #ffff;
+    background: #0078d4;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+ }
+ .try{
+    height: 43px;
+    color: #50e6ff;
+    background: transparent;
+    border: 0.5px solid #50e6ef;
+    border-radius: 5px;
+    font-size: 14px;
+ }
+
+ @media screen and (min-width:769px){
+    .content1{
+        text-align: start;
+        width: 546.75px;
+        height: 26px;
+    }
+    .content2{
+        text-align: start;
+        width: 546.75px;
+        height: 129.78px;
+    }
+    .content3{
+        text-align: start;
+        width: 70%;
+        height: 93.56px;
+        margin-bottom: 25px;
+    }
+    .content4{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: -14px;
+        column-gap: 28px;
+    }
+    .get{
+        padding: 10px 16px;
+    }
+    .try{
+        padding: 10px 16px;
+    }
+ }
+ @media screen and (min-width:940px){
+    .content2{
+        width: 100%;
+        height: 69.39px;
+    }
+ }
+ @media screen and (min-width:960px) {
+    .content2 p{
+        width: 50% ;
+        height: 129.78px;
+    }
+    .content4{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: -14px;
+        column-gap: 28px;
+        padding-top: 106px;
+    }
+    .content3{
+        text-align: start;
+        width: 50%;
+        height: 93.56px;
+        padding-top: 64px;
+    }
+    .content2{
+        width: 86%;
+        height: 69.39px;
+    }
+    .content1{
+        text-align: start;
+        width: 546.75px;
+        height: 26px;
+    }
+    
+ }
+ @media screen and (min-width:961px){
+    .banner1{
+        background-image: url(https://azurecomcdn.azureedge.net/cvt-538a3c7c40b7a7048c0b870e4226710e7dec61836528eab8613e75988fb0e9b0/images/page/home/ignite-hero-desktop.webp);
+        /* background-position: 60% 40%; */
+        background-size: cover;
+    }
+ }
+@media screen and (min-width:1014px) {
+    .content2{
+        width: 100%;
+    }
+}
+@media screen and (min-width:1280px){
+  .banner1{
+    height: 707px;
+  }  
+  .container{
+    max-width: 1205px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom:189px ;
+  }
+}
+/* @media screen and (min-width:1324px){
+    .container{
+        max-width: 1205px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */
