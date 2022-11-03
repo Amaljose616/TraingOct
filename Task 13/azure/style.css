@@ -434,6 +434,7 @@ header {
         width: 50%;
         height: 93.56px;
         padding-top: 64px;
+        padding-bottom: 12px;
     }
     .content2{
         width: 86%;
@@ -476,3 +477,89 @@ header {
         margin-right: auto;
     }
 } */
+.home{
+    padding: 60px 15px ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.home h2{
+    font-size: 20px;
+}
+.ignite img{
+    width: 68px;
+    height: 68px;
+}
+.ignite{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 17px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px rgba(0 0 0 /14%);
+}
+.ignite h2{
+    color: #0062ad;
+}
+.build img{
+    width: 68px;
+    height: 126px;
+    object-fit: contain;
+}
+.build{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px rgba(0 0 0 /14%);
+}
+.build h2{
+    text-align: left;
+    padding-left: 14px;
+    color: #0062ad;
+}
+.innovation{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px rgba(0 0 0 /14%);
+}
+.innovation img{
+    width: 68px;
+    height: 152px;
+    object-fit: contain;
+}
+.innovation h2{
+    width: 100%;
+    font-size: 20px;
+    padding-left: 14px;
+    text-align: left;
+    padding-right: 25px;
+    color: #0062ad;
+}
+.center-items{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 22px;
+}
+.center-items button{
+    width: 90%;
+    margin-left: 5%;
+    height: 43px;
+    background-color: white;
+    color: #0062ad;
+    border: 1px solid #0062ad;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.center-items{
+    font-weight: bold;
+}
+.premise{
+    padding: 13px;
+}
