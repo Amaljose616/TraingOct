@@ -15,7 +15,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 12px;
     align-items: center;
 }
@@ -279,14 +279,200 @@ header {
     /* width:290px;
     height: 42px; */
     text-align: center;
+    font-weight: bold;
+    margin: 0 19px;
 }
 .explore a:hover{
     text-decoration: underline;
+    cursor: pointer;
     
+}
+.explore a:hover img{
+    transform: translateX(10px);
+}
+.right1 div:hover{
+           text-decoration: underline;
+           cursor: pointer;
+}
+.search2:hover{
+    text-decoration: underline;
+}
+.list div:hover{
+    text-decoration: underline;
+}
+.azure p:hover{
+    text-decoration: underline;
 }
 @media  screen and (min-width:506px) {
     .explore{
         height: 48px;
     }
 }
+
+/* BANNER */
+
+.content1{
+    font-size: 20px;
+    color: #50e6ff;
+    text-align: center;
+    width: 98%;
+    font-weight: bold;
+}
+.content2{
+    font-size: 54px;
+    color: #f4f5f6;
+    text-align: center;
+    /* width: 295px; */
+    font-weight: bold;
+    line-height: 62px;
+    padding-bottom: 20px;
+}
+
+ .banner1{
+    padding:0px 15px ;
+    background-image: url(https://azurecomcdn.azureedge.net/cvt-4e9cef982775d2c18f86ab001a4bb46b72b9ca2382c0e91353156a4e71e774d7/images/page/home/ignite-hero-mobile.webp );
+    background-repeat: no-repeat;
+    /* align-content: center; */
+    /* height: 715.3px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    position: relative;
+    background-position: 60% 50%;
+    object-fit: cover;
+    gap: 3px;
+    padding-top: 59px;
+
+ }   
+ .content3{
+    font-size: 18px;
+    color: #f8f9fa;
+    text-align: center;
+    padding-bottom: 18px;
+ }
+ .content4{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 15px;
+    row-gap: 10px;
+    padding-bottom: 61px;
+    /* padding-left: 23px;
+    padding-right: 23px; */
+    width: 95%;
+    margin-left: 2.5%;
+ }
+ .get{
+    height: 43px;
+    color: #ffff;
+    background: #0078d4;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+ }
+ .try{
+    height: 43px;
+    color: #50e6ff;
+    background: transparent;
+    border: 0.5px solid #50e6ef;
+    border-radius: 5px;
+    font-size: 14px;
+ }
+
+ @media screen and (min-width:769px){
+    .content1{
+        text-align: start;
+        width: 546.75px;
+        height: 26px;
+    }
+    .content2{
+        text-align: start;
+        width: 546.75px;
+        height: 129.78px;
+    }
+    .content3{
+        text-align: start;
+        width: 70%;
+        height: 93.56px;
+        margin-bottom: 25px;
+    }
+    .content4{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: -14px;
+        column-gap: 28px;
+    }
+    .get{
+        padding: 10px 16px;
+    }
+    .try{
+        padding: 10px 16px;
+    }
+ }
+ @media screen and (min-width:940px){
+    .content2{
+        width: 100%;
+        height: 69.39px;
+    }
+ }
+ @media screen and (min-width:960px) {
+    .content2 p{
+        width: 50% ;
+        height: 129.78px;
+    }
+    .content4{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: -14px;
+        column-gap: 28px;
+        padding-top: 106px;
+    }
+    .content3{
+        text-align: start;
+        width: 50%;
+        height: 93.56px;
+        padding-top: 64px;
+    }
+    .content2{
+        width: 86%;
+        height: 69.39px;
+    }
+    .content1{
+        text-align: start;
+        width: 546.75px;
+        height: 26px;
+    }
     
+ }
+ @media screen and (min-width:961px){
+    .banner1{
+        background-image: url(https://azurecomcdn.azureedge.net/cvt-538a3c7c40b7a7048c0b870e4226710e7dec61836528eab8613e75988fb0e9b0/images/page/home/ignite-hero-desktop.webp);
+        /* background-position: 60% 40%; */
+        background-size: cover;
+    }
+ }
+@media screen and (min-width:1014px) {
+    .content2{
+        width: 100%;
+    }
+}
+@media screen and (min-width:1280px){
+  .banner1{
+    height: 707px;
+  }  
+  .container{
+    max-width: 1205px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom:189px ;
+  }
+}
+@media screen and (min-width:1324px){
+    .container{
+        max-width: 1205px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
