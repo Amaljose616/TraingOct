@@ -469,10 +469,10 @@ header {
         padding-bottom:189px ;
   }
 }
-@media screen and (min-width:1324px){
+/* @media screen and (min-width:1324px){
     .container{
         max-width: 1205px;
         margin-left: auto;
         margin-right: auto;
     }
-}
+} */
