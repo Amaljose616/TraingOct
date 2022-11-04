@@ -504,7 +504,7 @@ header {
 }
 .build img{
     width: 68px;
-    height: 126px;
+    height: 100%;
     object-fit: contain;
 }
 .build{
@@ -528,7 +528,7 @@ header {
 }
 .innovation img{
     width: 68px;
-    height: 152px;
+    height: 100%;
     object-fit: contain;
 }
 .innovation h2{
@@ -562,4 +562,202 @@ header {
 }
 .premise{
     padding: 13px;
+}
+.home-tab{
+    display: none;
+}
+.main{
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .home{
+        display: none;
+    }
+    .main{
+        display: contents;
+    }
+    .home-tab{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 26px;
+        padding-bottom: 29px;
+        grid-template-rows: 1fr;
+        padding: 0px 14px;
+        max-width: 1278px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 49px;
+
+    }
+    .home-tab p{
+        font-size: 16px;
+    }
+    .ignite-tab{
+        background-image: url(https://azurecomcdn.azureedge.net/cvt-53098ad6e93ddc08ce92302508a04648631cc869947963df1d487eb21792f208/images/page/home/microsoft-ignite-desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: 10% 10%;
+        background-size: cover;
+        padding-left: 17px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #ffff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0/ 14%);
+        border: 1px solid transparent;
+        padding-right: 103px;
+    }
+    .ignite-tab p{
+        color: #702573;
+    }
+    .build-tab {
+    display: flex;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgb(0 0 0/14%);
+    border: 1px solid transparent;
+    
+    }
+    .build-innovation{
+        display: grid;
+        row-gap:24px ;
+    }
+    .build-tab-txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        width: 54%;
+        height: 100%;
+        padding: 20px;
+    }
+    .build-tab img{
+        width: 146px;
+        height: 100%;
+    }
+    .innovation-tab{
+        display: flex;
+        background-color: #ffff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0/ 14%);
+        border: 1px solid transparent;
+    }
+    .innovation-tab-txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        height: 100%;
+        padding: 20px;
+    }
+    .ignite-tab h2{
+        font-size: 24px;
+        color:#151469;
+
+    }
+    .build-tab-txt h2{
+        font-size: 20px;
+        color: #0062ad;
+    }
+    
+
+    .innovation-tab img{
+        height: 100%;
+        width: 146px;
+    }
+    .innovation-tab-txt h2{
+        font-size: 20px;
+        color: #0062ad;
+    }
+    .premise{
+        text-align: center;
+        margin: 20px 0;
+    }
+    .user{
+      align-content: center;
+      justify-content: space-around;
+        display: flex;
+        width: 33.33%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 250px;
+        margin-top: 25px;
+        align-items: center;
+        gap: 12px;
+        
+    }
+    .user span{
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .user button{
+            background-color: transparent;
+            color: #0062ad;
+            border: 1px solid #0062ad;
+            padding: 10px 16px;
+            font-size: 14px;
+            border-radius: 4px;
+            width: 26%;
+            font-weight: 600;
+
+
+    }
+}
+@media screen and (min-width:1076px){
+    .user{
+        align-items: center;
+        align-content: center;
+        max-width: 358.67px;
+    }
+    .user span{
+        white-space: nowrap;
+        margin-right: 18%;
+
+    }
+    .user button{
+        white-space: nowrap;
+        width: 34%;
+        padding:10px 0;
+
+    }
+}
+ 
+/* IDEAS */
+.ideas{
+    background-color: #f8f9fa;
+}
+.ai{
+    display: flex;
+    height: 60px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffff;
+    margin-bottom: 12px;
+    padding: 12px 24px 12px 12px;
+    border: 0;
+    border-bottom: 1px solid #eaebec;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgb(0 0 0/ 14%);
+    font-weight: 600;
+}
+.ai svg{
+    width: 14px;
+    height: 21px;
+}
+.windowimg{
+    width: 250px;
+}
+.subarc img{
+    width: 256px;
+}
+.ideas{
+    padding: 60px 0px;
+}
+.ideas h2{
+    font-size: 20px;
+    text-align: center;
 }
