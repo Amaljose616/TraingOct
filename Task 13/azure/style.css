@@ -306,6 +306,9 @@ header {
 .azure p:hover{
     text-decoration: underline;
 }
+.view-tab{
+    display: none;
+}
 @media  screen and (min-width:506px) {
     .explore{
         height: 48px;
@@ -887,7 +890,7 @@ padding-bottom: 30px;
             grid-template-columns: 1fr 1fr;
             row-gap: 24px;
             column-gap: 21px;
-            width: 90%;
+            
             /* margin-left: 5%;
             margin-right: 5%; */
             padding-bottom: 12px;
@@ -924,7 +927,8 @@ padding-bottom: 30px;
         .buttons-details{
             display: flex;
             flex-direction: column;
-            width: 37%;
+            white-space: nowrap;
+            
         }
         .arclist-tab{
             display: grid;
@@ -951,5 +955,26 @@ padding-bottom: 30px;
     .windowimg-tab{
         display: block;
         max-height: 530px;
+        max-width: none;
+        border-radius: 12px;
+        background-color: black;
+        padding: 3%;
+        box-shadow: 0 10px 20px rgb(0 0 0/ 14%);
+    }
+    .buttons-details{
+        white-space: nowrap;
+    }
+    .arclist-tab{
+        margin-right: 38px;
+    }
+    .ideas-tab{
+        padding: 29px 0 60px 14px;
+    }
+    .list-ideas-tab{
+        overflow: hidden;
+    }
+    .view-tab{
+        display: block;
+        transform:translateY(2000px);
     }
 }
