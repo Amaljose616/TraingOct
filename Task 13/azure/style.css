@@ -86,6 +86,9 @@ header {
 .right1 {
     display: none;
 }
+.windowimg-tab{
+    display: none;
+}
 
 @media screen and (min-width:768px) {
     header {
@@ -303,6 +306,9 @@ header {
 .azure p:hover{
     text-decoration: underline;
 }
+.view-tab{
+    display: none;
+}
 @media  screen and (min-width:506px) {
     .explore{
         height: 48px;
@@ -516,8 +522,8 @@ header {
 }
 .build h2{
     text-align: left;
-    padding-left: 14px;
     color: #0062ad;
+    padding: 24px;
 }
 .innovation{
     display: flex;
@@ -534,7 +540,7 @@ header {
 .innovation h2{
     width: 100%;
     font-size: 20px;
-    padding-left: 14px;
+    padding:24px;
     text-align: left;
     padding-right: 25px;
     color: #0062ad;
@@ -577,6 +583,12 @@ header {
     .main{
         display: contents;
     }
+    .ideas-tab h2{
+
+        font-size: 24px;
+        width: 90%;
+        padding: 31px 0px;
+    }
     .home-tab{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -606,7 +618,7 @@ header {
         border-radius: 6px;
         box-shadow: 0 2px 5px rgb(0 0 0/ 14%);
         border: 1px solid transparent;
-        padding-right: 103px;
+        padding-right: 174px;
     }
     .ignite-tab p{
         color: #702573;
@@ -680,7 +692,7 @@ header {
         width: 33.33%;
         margin-left: auto;
         margin-right: auto;
-        padding-bottom: 250px;
+        padding-bottom: 110px;
         margin-top: 25px;
         align-items: center;
         gap: 12px;
@@ -695,7 +707,7 @@ header {
             background-color: transparent;
             color: #0062ad;
             border: 1px solid #0062ad;
-            padding: 10px 16px;
+            padding: 5px;
             font-size: 14px;
             border-radius: 4px;
             width: 26%;
@@ -743,16 +755,27 @@ header {
     border-radius: 4px;
     box-shadow: 0 2px 5px rgb(0 0 0/ 14%);
     font-weight: 600;
+    
 }
 .ai svg{
     width: 14px;
     height: 21px;
 }
-.windowimg{
-    width: 250px;
-}
 .subarc img{
-    width: 256px;
+    width: 36px;
+    height: 36px;
+}
+.subarc p{
+    font-size: 14px;
+    color: #4c4c41;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.firstarc a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #0062ad;
+    font-weight: bold;
 }
 .ideas{
     padding: 60px 0px;
@@ -760,4 +783,198 @@ header {
 .ideas h2{
     font-size: 20px;
     text-align: center;
+    padding: 0 10px 20px 10px;
+}
+.firstarc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgb(0 0 0/ 14%);
+    padding: 24px;
+    position: relative;
+    background: #ffff;
+}
+.arclist{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 21px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 12px;
+}
+.product-details{
+display: flex;
+align-items: center;
+text-decoration: none;
+justify-content: center;
+padding-bottom: 30px;
+}
+.product-details img{
+    width: 12px;
+    height: 12px;
+}
+.product-details p{
+    color: #0062ad;
+}
+.list-ideas{
+    padding-bottom: 31px;
+}
+.windowimg{
+    max-width: 85%;
+    margin-left: 7.5%;
+    height: auto;
+    /* color: #4c4c51; */
+    border-radius: 12px;
+    background-color: black;
+    padding: 3%;
+    box-shadow: 0 10px 20px rgb(0 0 0/ 14%);
+
+}
+.ideas-tab{
+    display: none;
+}
+@media screen and (min-width:768px){
+    .ideas{
+        display: none;
+    }
+    .ideas-tab{
+        display: block;
+        padding: 29px 14px 60px 14px;
+        background:#f8f9fa ;
+        
+    }
+    .ideas-tab h2{
+        font-size: 24px;
+        width: 90%;
+        padding-left: 12px;
+        
+    }
+    .buttons{
+        padding-bottom: 12px;
+    }
+    .ai-tab{
+        display: flex;
+        height: 48px;
+        width: 90%;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        padding: 12px 24px 12px 12px;
+        border: 0;
+        background:#f8f9fa ;
+    }
+    
+    .product-details-tab{
+        display: flex;
+        align-items: center; 
+        text-decoration: none;
+        padding-left: 11px;
+        padding-bottom: 30px;
+        }
+        .product-details-tab img{
+            width: 12px;
+            height: 12px;
+        }
+        .product-details-tab p{
+            color: #0062ad;
+            font-weight: 600;
+        }
+        .arclist-tab{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 24px;
+            column-gap: 21px;
+            
+            /* margin-left: 5%;
+            margin-right: 5%; */
+            padding-bottom: 12px;
+        }
+        .firstarc-tab{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0;
+            text-align: center;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgb(0 0 0/ 14%);
+            padding: 24px;
+            position: relative;
+            background: #ffff; 
+        }
+        .firstarc-tab a{
+            font-size: 14px;
+            text-decoration: none;
+            color: #0062ad;
+            font-weight: bold;
+        }
+        .subarc-tab img{
+            width: 36px;
+            height: 36px;
+        }
+        .subarc-tab p{
+            font-size: 16px;
+            color: #4c4c41;
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+        .buttons-details{
+            display: flex;
+            flex-direction: column;
+            white-space: nowrap;
+            
+        }
+        .arclist-tab{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .list-ideas-tab{
+            display: flex;
+            padding-bottom: 18px;
+        }
+        .ai-tab p{
+            font-size: 16px;
+        }
+        .view{
+            float: right;
+            text-decoration: none;
+            font-size: 14px;
+            color: #0062ad;
+        }   
+}
+@media screen and (min-width:960px) {
+    .view{
+        display: none;
+    }
+    .windowimg-tab{
+        display: block;
+        max-height: 530px;
+        max-width: none;
+        border-radius: 12px;
+        background-color: black;
+        padding: 3%;
+        box-shadow: 0 10px 20px rgb(0 0 0/ 14%);
+    }
+    .buttons-details{
+        white-space: nowrap;
+    }
+    .arclist-tab{
+        margin-right: 38px;
+    }
+    .ideas-tab{
+        padding: 29px 0 60px 14px;
+    }
+    .list-ideas-tab{
+        overflow: hidden;
+    }
+    .view-tab{
+        display: block;
+        transform:translateY(2000px);
+    }
 }
