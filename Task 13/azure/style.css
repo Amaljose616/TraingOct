@@ -405,6 +405,11 @@ header {
     border-radius: 5px;
     font-size: 14px;
 }
+.get:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: #0062ad;
+}
 
 .try {
     height: 43px;
@@ -413,6 +418,12 @@ header {
     border: 0.5px solid #50e6ef;
     border-radius: 5px;
     font-size: 14px;
+}
+.try:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: #50e6ef;
+    color: black;
 }
 
 @media screen and (min-width:769px) {
@@ -687,6 +698,12 @@ header {
         border: 1px solid transparent;
         padding-right: 174px;
     }
+    .ignite-tab:hover h2{
+        text-decoration: underline;
+    }
+    .ignite-tab:hover{
+        box-shadow: 0 7px 7px rgb(0 0 0/ 14%); 
+    }
 
     .ignite-tab p {
         color: #702573;
@@ -698,6 +715,12 @@ header {
         box-shadow: 0 2px 5px rgb(0 0 0/14%);
         border: 1px solid transparent;
 
+    }
+    .build-tab:hover{
+        box-shadow: 0 7px 7px rgb(0 0 0/ 14%); 
+    }
+    .build-tab:hover .build-tab-txt h2{
+        text-decoration: underline;
     }
 
     .build-innovation {
@@ -726,6 +749,12 @@ header {
         border-radius: 6px;
         box-shadow: 0 2px 5px rgb(0 0 0/ 14%);
         border: 1px solid transparent;
+    }
+    .innovation-tab:hover .innovation-tab-txt h2{
+        text-decoration: underline;
+    }
+    .innovation-tab:hover{
+        box-shadow: 0 7px 7px rgb(0 0 0/ 14%);
     }
 
     .innovation-tab-txt {
@@ -817,6 +846,12 @@ header {
         padding: 10px 0;
 
     }
+    .user button:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: #ffff;
+        background-color: #0078D4;
+    }
 }
 
 /* IDEAS */
@@ -842,6 +877,7 @@ header {
     font-weight: 600;
 
 }
+
 
 .ai svg {
     width: 14px;
@@ -981,6 +1017,10 @@ header {
         border: 0;
         background: #f8f9fa;
     }
+    .ai-tab:hover{
+        text-decoration: underline;
+        color: #0078D4;
+    }
 
     .product-details-tab {
         display: flex;
@@ -999,7 +1039,10 @@ header {
         color: #0062ad;
         font-weight: 600;
     }
-
+    .product-details-tab p:hover{
+        text-decoration: underline;
+        color: #242429;
+    }
     .arclist-tab {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1023,6 +1066,12 @@ header {
         padding: 24px;
         position: relative;
         background: #ffff;
+    }
+    .firstarc-tab:hover{
+        box-shadow: 0 7px 7px rgb(0 0 0/ 14%);
+    }
+    .firstarc-tab:hover a{
+        text-decoration: underline;
     }
 
     .firstarc-tab a {
@@ -1127,6 +1176,11 @@ header {
 
     .imgsection {
         display: inline-block;
+        padding-left: 12px;
+    }
+    .imgsection:hover{
+        transform: translateX(-30px);
+        transition-duration: 0.9s;
     }
 
     .button-arc-tab {
@@ -1256,6 +1310,7 @@ header {
     .list-button:hover {
         filter: grayscale(0);
         cursor: pointer;
+        background-color: #e8e8e4;
 
 
     }
@@ -1289,7 +1344,12 @@ header {
         width: 12px;
         height: 12px;
     }
-
+    .casestudy-link:hover{
+        text-decoration: none;
+    }
+    .casestudy-link:hover img{
+        transform: translateX(2px);
+    }
     .study-lap {
         background-color: #1a1a1f;
         color: #ffff;
@@ -1375,16 +1435,24 @@ header {
 
     .modern-txt button {
         width: 40%;
+        border-radius: 6px;
+    }
+    .modern-txt button:hover{
+        background-color: #0062ad;
+        color: #ffff;
+        text-decoration: underline;
     }
 }
 
 @media screen and (min-width:768px) {
     .modernisation {
         display: flex;
+        align-items: center;
     }
 
+
     .modernisation img {
-        max-width: 50%;
+        max-width: 40%;
         height: auto;
     }
 }
@@ -1489,6 +1557,9 @@ header {
         text-decoration: none;
         color: #1a1a1f;
     }
+    .secure-lap:hover .secure-txt-lap a{
+        text-decoration: underline;
+    }
 
     .secure-lap {
         display: flex;
@@ -1520,17 +1591,23 @@ header {
         padding: 24px;
         border-radius: 6px;
     }
+    .secure-lap-bg:hover p{
+        text-decoration: underline;
+    }
 
     .beyond-lap-bg {
         background-image: url(https://azurecomcdn.azureedge.net/cvt-4fa37bc4e46129b5c49c6d6549e0de5c057007fcbdecdff3a4eb0fbd80b8460b/images/page/home/news/azure-regions-525w.webp);
         color: white;
-        align-items: center;
+        align-items: end;
         display: flex;
         font-size: 18px;
         font-weight: 600;
         padding: 24px;
         border-radius: 6px;
 
+    }
+    .beyond-lap-bg:hover p{
+        text-decoration: underline;
     }
 }
 
@@ -1633,7 +1710,15 @@ header {
         align-items: center;
         gap: 12px;
     }
-
+    .dev-button-search button:hover span{
+        text-decoration: underline;
+    }
+    .dev-button-search a:hover{
+        text-decoration: none;
+    }
+    .dev-button-search a:hover img{
+        transform: translateX(2px);
+    }
     .dev-txt {
         display: none;
     }
@@ -1693,6 +1778,9 @@ header {
     margin-bottom: 12px;
     border-radius: 8px;
 }
+.start:hover h3{
+    text-decoration: underline;
+}
 
 .start img {
     width: 36px;
@@ -1709,6 +1797,9 @@ header {
     margin-bottom: 12px;
     border-radius: 8px;
 }
+.connect:hover h3{
+    text-decoration: underline;
+}
 
 .connect img {
     width: 36px;
@@ -1723,6 +1814,9 @@ header {
     padding: 24px;
     color: #ffff;
     border-radius: 8px;
+}
+.microsoft:hover h3{
+    text-decoration: underline;
 }
 
 .microsoft img {
@@ -1791,6 +1885,9 @@ header {
     .list-bar {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1278px;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
@@ -1809,6 +1906,7 @@ footer{
     padding-left: 12px;
     padding-top: 40px;
     padding-right: 12px;
+    padding-bottom: 60px;
 }
 .azure-foot a svg {
     width: 24px;
@@ -1824,8 +1922,10 @@ footer{
     border: none;
     background-color: #eaebec;
     padding: 12px;
+    font-size: 14px;
     width: 90%;
     margin-bottom: 20px;
+    border-radius: 6px;
     
 }
 .media svg{
@@ -1848,10 +1948,14 @@ footer{
     background-color: #eaebec;
     margin-bottom: 40px;
     font-size: 14px;
+    border-radius: 6px;
 }
 .footer-nav p{
     font-size: 12px;
     margin-bottom: 10px;
+}
+.footer-nav{
+    padding-bottom: 16px;
 }
 .footer-nav button{
     width: 188px;
@@ -1863,6 +1967,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
     
 }
 .footer-nav button p{
@@ -1872,4 +1977,109 @@ footer{
     font-size: 12px;
     text-decoration: none;
     color: #1a1a1f;
+    padding: 12px;
+    width: 80%;
+    
+}
+.footer-list{
+    
+    text-align: end;
+    width: 100%;
+}
+@media screen and (min-width:391px) {
+    .azure-foot{
+        display: flex;
+        align-items: center;
+    }
+    .azure-foot a{
+        width: 223px;
+        margin-right: 12px;
+        font-size: 14px;
+    }
+}
+.anchor:hover span{
+    text-decoration: underline;
+}
+.media svg:hover{
+    opacity: 0.5;
+}
+.chat{
+    color: #ffff;
+    background-color: #0078D4;
+    width: 153px;
+    display: flex;
+    padding: 10px 18px;
+    border: none;
+    position: fixed;
+    bottom: 0;
+    right: 12px;
+    z-index: 1;
+    border-radius: 6px 6px 0 0;
+    gap: 6px;
+}
+.footer-lap{
+    display: none;
+}
+@media  screen and (min-width:960px) {
+    footer{
+        display: none;
+    }
+    .footer-lap{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer-list-lap{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        
+    }
+    .footer-list-lap ul{
+        list-style-type: none;
+    }
+    .footer-list-lap ul li p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .footer-list-lap ul li{
+        font-size: 12px;
+        padding-bottom: 12px;
+    }
+    .end{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1278px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-list{
+        width: 67%;
+    }
+    .final-list{
+        max-width: 1278px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.explore-lap li:hover{
+    text-decoration: underline;
+}
+.Product-lap li:hover{
+    text-decoration: underline;
+}
+.Solution-lap li:hover{
+    text-decoration: underline;
+}
+.Partners-lap li:hover{
+    text-decoration: underline;
+}
+.Resources-lap li:hover{
+    text-decoration: underline;
+}
+.cloud-lap li:hover{
+    text-decoration: underline;
+}
+.footer-list ul a:hover{
+    text-decoration: underline;
 }
