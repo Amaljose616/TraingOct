@@ -36,14 +36,16 @@ header {
 }
 
 .burger svg {
-    width: 19px;
-    height: 18px;
+    width: 20px;
+    height: 39px;
 }
 
 .burger p {
     width: 54.02px;
     height: 24px;
     font-size: 18px;
+    font-weight: 600;
+    transform: translateX(1px);
 }
 
 .signin {
@@ -61,6 +63,7 @@ header {
     height: 18px;
     margin-left: 13px;
     margin-bottom: -2px;
+    transform: translateY(1px);
 }
 
 .signin p {
@@ -75,12 +78,18 @@ header {
 .microicon {
     display: flex;
     align-items: center;
+    transform: translateX(-1px);
 
 }
 
 .microicon svg {
     width: 32px;
     height: 32px;
+}
+@media screen and (min-width:375px){
+    .microicon{
+        transform: translateX(0px);
+    }
 }
 
 .header1 {
@@ -296,11 +305,10 @@ header {
     color: #ffff;
     text-decoration: none;
     font-size: 14px;
-    /* width:290px;
-    height: 42px; */
     text-align: center;
     font-weight: bold;
-    margin: 0 19px;
+    margin: 0 18.5px;
+    line-height: 1.5em;
 }
 
 .explore a:hover {
@@ -348,6 +356,7 @@ header {
     text-align: center;
     width: 98%;
     font-weight: bold;
+    padding: 0 4px 4px 4px;
 }
 
 .content2 {
@@ -365,7 +374,7 @@ header {
     background-image: url(https://azurecomcdn.azureedge.net/cvt-4e9cef982775d2c18f86ab001a4bb46b72b9ca2382c0e91353156a4e71e774d7/images/page/home/ignite-hero-mobile.webp );
     background-repeat: no-repeat;
     /* align-content: center; */
-    /* height: 715.3px; */
+    height: 715.3px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -381,7 +390,7 @@ header {
     font-size: 18px;
     color: #f8f9fa;
     text-align: center;
-    padding-bottom: 18px;
+    padding-bottom: 22px;
 }
 
 .content4 {
@@ -714,6 +723,7 @@ header {
         border-radius: 6px;
         box-shadow: 0 2px 5px rgb(0 0 0/14%);
         border: 1px solid transparent;
+        
 
     }
     .build-tab:hover{
@@ -749,6 +759,7 @@ header {
         border-radius: 6px;
         box-shadow: 0 2px 5px rgb(0 0 0/ 14%);
         border: 1px solid transparent;
+        
     }
     .innovation-tab:hover .innovation-tab-txt h2{
         text-decoration: underline;
@@ -794,16 +805,16 @@ header {
     }
 
     .user {
-        align-content: center;
-        justify-content: space-around;
+        
+        justify-content: center;
         display: flex;
         width: 33.33%;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 110px;
         margin-top: 25px;
-        align-items: center;
-        gap: 12px;
+        justify-content: space-around;
+        
 
     }
 
@@ -824,6 +835,14 @@ header {
         font-weight: 600;
 
 
+    }
+}
+@media screen and (min-width:960px){
+    .build-tab{
+        max-height: 148px;
+    }
+    .innovation-tab{
+        max-height: 148px;
     }
 }
 
@@ -1457,6 +1476,7 @@ header {
     }
 }
 
+
 .discover-list {
     display: grid;
     grid-template-columns: repeat(6, 75vw);
@@ -1682,7 +1702,6 @@ header {
     display: none;
 }
 
-@media screen and(min-width:570px) {}
 
 @media screen and (min-width:960px) {
     .dev-txt-tab {
@@ -1984,7 +2003,7 @@ footer{
 .footer-list{
     
     text-align: end;
-    width: 100%;
+    
 }
 @media screen and (min-width:391px) {
     .azure-foot{
@@ -2007,15 +2026,22 @@ footer{
     color: #ffff;
     background-color: #0078D4;
     width: 153px;
+    height: 42px;
     display: flex;
-    padding: 10px 18px;
+    padding: 10px 18px 10px 20px;
+
     border: none;
     position: fixed;
     bottom: 0;
     right: 12px;
     z-index: 1;
-    border-radius: 6px 6px 0 0;
-    gap: 6px;
+    border-radius: 4px 4px 0 0;
+    gap: 4px;
+    white-space: nowrap;
+    align-items: center;
+}
+.chat img{
+    transform: translateY(-3px);
 }
 .footer-lap{
     display: none;
