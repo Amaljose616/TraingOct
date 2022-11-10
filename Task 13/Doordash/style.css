@@ -1,0 +1,217 @@
+@font-face {
+    font-family: font-bold;
+    src: url(font/TTNorms-Bold.woff2);
+}
+@font-face {
+    font-family: font-medium;
+    src: url(font/TTNorms-Medium.woff2);
+}
+@font-face {
+    font-family: font-regular;
+    src: url(font/TTNorms-Regular.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=800,format=auto,quality=60/https://cdn.doordash.com/media/consumer/home/landing/new/hero_landing_us_mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+
+}
+.sign{
+    display: flex;
+    justify-content: flex-end;
+    font-family: font-medium;
+    padding-right: 24px;
+    padding-top: 16px;
+    align-items: center;
+    gap: 16px;
+    
+}
+.signup{
+    font-size: 16px;
+    font-family: font-bold;
+    background-color: rgb(255, 255, 255);
+    color: rgb(73, 73, 73);    
+    padding: 10px 16px 11px 16px;
+    border-radius: 1000px;
+}
+.signin{
+    font-size: 18px;
+    font-family: font-bold;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.04ch;
+    color: rgb(255, 255, 255);
+}
+.banner-txt{
+    padding-top: 40px;
+    padding-bottom: 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 56px;
+    height: 32px;
+    margin-bottom: 16px;
+}
+.doordash{
+    display: none ;
+}
+.resto{
+    font-size: 32px;
+    font-family: font-bold;
+    text-align: center;
+    letter-spacing: -0.04ch;
+    height: 80px;
+    max-width: 334px;
+    color: #ffff;
+    line-height: 39px;
+    margin-bottom: 27px;
+    margin-top: -5px;
+    padding-top: 2px;
+}
+.address{
+    border: none;
+    background-color: #ffff;
+    width: 275px;
+    max-width: 275px;
+     margin-right: auto;
+    margin-left: auto; 
+    height: 46px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgb(214 214 214) 0px 0px 0px 1px ;
+    margin-bottom: 18px;
+    justify-content: space-around;
+}
+.address input{
+    border: none;
+    font-family: font-medium;
+    font-size: 16px;
+    width: 179px;
+    height: 22px;
+    line-height: 22px;
+    transform: translateX(-7px);
+    font-weight: 500;
+}
+.link-save a{
+    font-family: font-medium;
+    color: #ffff;
+    font-size: 16px;
+}
+.search{
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    transform: translateX(5px);
+    margin-left: 3px;
+}
+.enter{
+    width: 275px;
+}
+.right-arrow{
+    margin-right: 6px;
+    width: 24px;
+    height: 24px;
+    transform: translateX(5px);
+}
+.location{
+    display: none;
+}
+
+ @media screen and (min-width:768px) {
+    .search{
+        display: none;
+    }
+    .location{
+        display: flex;
+        margin-right: 5px;
+        margin-left: 2px;
+        transform: translateX(-1px);
+    }
+    .address{
+        width: 406px;
+        max-width: 406px;
+        margin-inline: auto;
+        transform: translateX(-66px);
+        border-radius: 32px;
+    }
+    .address input{
+        width: 318px;
+    }
+    .right-arrow{
+        transform: translateX(6px);
+    }
+}
+@media screen and (min-width:960px) {
+    .doordash{
+        display: flex;
+        width: 155px;
+        height: 18px;
+        margin-left: 12px;
+    }
+    .doordash-logo{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 16px;
+    }
+    .logo{
+        width: 42px;
+        height: 24px;
+        margin-bottom: 0;
+    }
+    .banner{
+        position: relative;
+    }
+    .resto{
+        font-size: 64px;
+        max-width: 668px;
+        height: 152px;
+        line-height: 76px;
+        margin-top: 40px;
+        margin-bottom: 33px;
+    }
+    .banner-txt{
+        padding-bottom: 175px;
+    }
+}
+.white-arrow{
+    display: none
+}
+@media screen and (min-width:1184px) {
+    .right-arrow{
+        display: none;
+    }
+    .white-arrow{
+        display:flex ;
+        
+    
+        
+    }
+    .arrow-container{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; 
+        background-color: #eb1700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .location{
+        margin-left: 4px;
+        margin-right: 7px;
+    }
+    .address input{
+        transform: translateX(-4px);
+    }
+
+}l
