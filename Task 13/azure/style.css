@@ -352,7 +352,7 @@ header {
 
 .content1 {
     font-size: 20px;
-    color: #50e6ff;
+    color: #0062ad;
     text-align: center;
     width: 98%;
     font-weight: bold;
@@ -361,7 +361,7 @@ header {
 
 .content2 {
     font-size: 54px;
-    color: #f4f5f6;
+    color: #000;
     text-align: center;
     /* width: 295px; */
     font-weight: bold;
@@ -371,7 +371,7 @@ header {
 
 .banner1 {
     padding: 0px 15px;
-    background-image: url(https://azurecomcdn.azureedge.net/cvt-4e9cef982775d2c18f86ab001a4bb46b72b9ca2382c0e91353156a4e71e774d7/images/page/home/ignite-hero-mobile.webp );
+    background-image: url(img/banner-mobile.png);
     background-repeat: no-repeat;
     /* align-content: center; */
     height: 715.3px; 
@@ -388,7 +388,7 @@ header {
 
 .content3 {
     font-size: 18px;
-    color: #f8f9fa;
+    color: #4c4c51;
     text-align: center;
     padding-bottom: 22px;
 }
@@ -422,9 +422,9 @@ header {
 
 .try {
     height: 43px;
-    color: #50e6ff;
+    color: #4c4c51;
     background: transparent;
-    border: 0.5px solid #50e6ef;
+    border: 0.5px solid #4c4c51;
     border-radius: 5px;
     font-size: 14px;
 }
@@ -517,7 +517,7 @@ header {
 
 @media screen and (min-width:961px) {
     .banner1 {
-        background-image: url(https://azurecomcdn.azureedge.net/cvt-538a3c7c40b7a7048c0b870e4226710e7dec61836528eab8613e75988fb0e9b0/images/page/home/ignite-hero-desktop.webp);
+        background-image: url(img/banner-desktop.webp);
         /* background-position: 60% 40%; */
         background-size: cover;
     }
@@ -693,14 +693,14 @@ header {
     }
 
     .ignite-tab {
-        background-image: url(https://azurecomcdn.azureedge.net/cvt-53098ad6e93ddc08ce92302508a04648631cc869947963df1d487eb21792f208/images/page/home/microsoft-ignite-desktop.jpg);
+        background-image: url(img/ignite-tab.jpg);
         background-repeat: no-repeat;
         background-position: 10% 10%;
         background-size: cover;
         padding-left: 17px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: end;
         background-color: #ffff;
         border-radius: 6px;
         box-shadow: 0 2px 5px rgb(0 0 0/ 14%);
@@ -715,7 +715,7 @@ header {
     }
 
     .ignite-tab p {
-        color: #702573;
+        color: #4c4c51;
     }
 
     .build-tab {
@@ -1479,7 +1479,7 @@ header {
 
 .discover-list {
     display: grid;
-    grid-template-columns: repeat(6, 75vw);
+    grid-template-columns: repeat(6, 320px);
     column-gap: 30px;
     row-gap: 24px;
     margin: 0;
@@ -1601,8 +1601,10 @@ header {
     }
 
     .secure-lap-bg {
-        background-image: url(https://azurecomcdn.azureedge.net/cvt-4fa37bc4e46129b5c49c6d6549e0de5c057007fcbdecdff3a4eb0fbd80b8460b/images/page/home/news/azure-ignite-ai-automation.webp);
-        background-position: 19% 6%;
+        background-image: url(img/secure-lap-3.webp);
+        background-position: 55% 23%;
+        object-fit: cover;
+        object-position: 0 0;
         align-items: end;
         font-size: 18px;
         display: flex;
@@ -1616,7 +1618,8 @@ header {
     }
 
     .beyond-lap-bg {
-        background-image: url(https://azurecomcdn.azureedge.net/cvt-4fa37bc4e46129b5c49c6d6549e0de5c057007fcbdecdff3a4eb0fbd80b8460b/images/page/home/news/azure-regions-525w.webp);
+        background-image: url(img/secure-lap-5.webp);
+        background-position: 5% 37%;
         color: white;
         align-items: end;
         display: flex;
