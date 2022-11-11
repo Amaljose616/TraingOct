@@ -220,6 +220,7 @@
     margin-inline: auto;
     height: 148px;
     padding: 24px 0px;
+    margin-top: 8px;
 }
 .experience{
     font-family: font-bold;
@@ -238,26 +239,169 @@
     background-color: #eb1700;
     white-space: nowrap;
     border-radius: 50px;
-     padding: 9px; 
-     transform: translateX(4px);
+     padding: 11px 16px; 
+     transform: translateX(0px);
 }
 .dasher{
     font-family: font-bold;
     font-size: 16px;
     display: flex;
     align-items: center;
+    letter-spacing: -0.04ch;
+    padding: 0 2px;
+    transform: translateX(-4px);
 }
 .merchant{
     font-family: font-bold;
     font-size: 16px;
     display: flex;
     align-items: center;
+    letter-spacing: -0.04ch;
+    padding: 0 2px;
+    transform: translateX(-2px);
 }
 .quotes{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 15px;
 }
 .links{
     display: flex;
     justify-content: space-evenly;
+}
+.links svg{
+    transform: translateX(5px);
+}
+.shopping{
+    padding: 8px;
+    transform: translateY(-18px);
+}
+.delivery{
+    display: flex;
+    padding: 16px;
+    margin-bottom: 4px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.delivery-boy img{
+    width: 88px;
+    height: 88px;
+    margin-right: 32px;
+}
+.delivery-dasher h2{
+   font-family: font-bold;
+   font-weight: 700;
+   line-height: 40px;
+   color: rgb(25, 25, 25);
+   text-align: left;
+   letter-spacing: -0.04ch;
+   font-size: 32px;
+}
+.delivery-dasher h3{
+    font-family: font-medium;
+    font-size: 18px;
+    line-height: 24px;
+    color: #191919;
+    text-align: left;
+    font-weight: 500;
+}
+.delivery-dasher button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 12px 0px 0px;
+    transform: translateY(2px);
+}
+.delivery-dasher button span{
+    color: #eb1700;
+    font-family: font-bold;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.04ch;
+    margin-right: 2px;
+}
+.delivery-dasher button svg{
+  width: 10px;
+  transform: translateX(5px);
+}
+@media screen and (min-width:768px) {
+    .delivery{
+        max-width: 439px;
+        margin-inline: auto;
+    }
+    .delivery-boy img{
+        width: 124px;
+        height: 124px;
+    }
+    .delivery-boy{
+        margin-right: 33px;
+    }
+    .shopping{
+        transform: translateY(-24px);
+    }
+}
+@media screen and (min-width:1184px) {
+    .shopping{
+        display: flex;
+        max-width: 1184px;
+        margin-inline: auto;
+        padding-top: 51px ;
+        transform: translateX(-29px);
+    }
+    .delivery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .delivery-dasher{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .delivery-boy img{
+        width: 154px;
+        height: 154px;
+    }
+    .delivery-boy{
+        margin-right: 0px;
+    }
+    .delivery-dasher h3{
+        text-align: center;
+    }
+}
+.first-image-card img{
+    width: 100%;
+    height: 100%;
+    right: 0;
+    position: relative;
+}
+.second-image-card img{
+    width: 100%;
+    height: 100%;
+    padding-top: 500px;
+    
+}
+.first-image-txt{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.second-image-txt{
+    display: flex;
+    flex-direction: column;
+}
+.second-image-card{
+    background-color: #fff0ed;
+    margin-top: -300px;
+
+}
+.first-image{
+    margin-left: 64px;
+    display: block;
 }

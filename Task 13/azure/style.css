@@ -1603,6 +1603,7 @@ header {
     .secure-lap-bg {
         background-image: url(img/secure-lap-3.webp);
         background-position: 55% 23%;
+        background-size: cover;
         object-fit: cover;
         object-position: 0 0;
         align-items: end;
@@ -1620,6 +1621,7 @@ header {
     .beyond-lap-bg {
         background-image: url(img/secure-lap-5.webp);
         background-position: 5% 37%;
+        background-size: cover;
         color: white;
         align-items: end;
         display: flex;
