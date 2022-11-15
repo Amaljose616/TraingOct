@@ -1,0 +1,336 @@
+@font-face {
+    font-family: font-bold;
+    src: url(Guardian-EgypTT-Light.woff2);
+}
+@font-face {
+    font-family: font-medium;
+    src: url(Graphik-Medium-Web.woff2);
+}
+@font-face {
+    font-family: font-regular;
+    src: url(Graphik-Regular-Web.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding-left:9px;
+    padding-right: 9px;
+    margin-bottom: 12px;
+}
+.logo-signin{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-bottom: 6px;
+}
+.signin{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding-right: 15px;
+}
+.signin button{
+    border: none;
+    background-color: #ffff;
+    font-size: 13px;
+    font-family: font-medium;
+    line-height: 1.4;
+    transform: translateX(7px);
+    padding:7px 16px;
+}
+.heart{
+    transform: translateY(-2px);
+}
+.cart{
+    transform: translateY(-2px);
+}
+.menu{
+    border: none;
+    background-color: #ffff;
+}
+.search{
+    display: flex;
+    padding: 10px;
+    border-radius: 96px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(34, 34, 34, 0.05);
+}
+.menu-search{
+    display: flex;
+    padding-left: 3px;
+    padding-right: 3px;
+    gap: 12px;
+}
+.search span{
+    font-size: 16px;
+    color: grey;
+    font-family: inherit;
+    padding-left: 8px;
+}
+.search svg{
+    margin-right: 12px;
+}
+.search-lap{
+    display: none;
+}
+@media screen and (min-width:480px) {
+    .logo{
+        width: 80px;
+        height: 40px;
+    }
+    .logo svg{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (min-width:768px) {
+    .signin{
+        gap: 24px;
+    }
+    .logo-signin{
+        padding-bottom: 5px;
+    }
+    .search span{
+        letter-spacing: 0.069ch;
+        transform: translateY(1px);
+    }
+}
+.item-list{
+    display: none;
+}
+@media  screen and (min-width:900px) {
+    .menu-search{
+        display: none;
+    }
+    .search-lap{
+        display: flex;
+        padding: 10px;
+        border-radius: 96px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(34, 34, 34, 0.05);
+    }
+    .search-lap span{
+        font-size: 16px;
+        color: grey;
+        font-family: inherit;
+        padding-left: 8px;
+        letter-spacing: 0.07ch;
+        transform: translateY(1px);
+    }
+    .search-lap svg{
+        margin-right: 12px;
+    }
+    .signin button{
+        white-space: nowrap;
+    }
+    .logo-signin{
+        padding: 12px 33px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 16px;
+    }
+    header{
+        padding: 0px;
+    }
+    .logo{
+        width: 123px;
+        height: 40px;
+        margin-right: 9px;
+        transform: translateY(1px);
+    }
+    .signin{
+        margin-left: 10px;
+    }
+    .heart{
+        transform: translateY(-1px);
+    }
+    .cart{
+        transform: translateY(-1px);
+    }
+    .item-list{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0px 36px;
+        gap: 12px;
+        justify-content: space-between;
+    }
+    .gift{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 3px;
+        padding-right: 9px;
+    }
+    .item-list li{
+        font-size: 13px;
+        font-family: font-regular;
+        line-height: 18px;
+    }
+    .gift svg{
+        transform: translateY(-1px);
+    }
+    header{
+        max-width: 1400px;
+        margin-inline: auto;
+    }
+}
+@media screen and (min-width:1440px) {
+    .item-list{
+        gap: 49px;
+    }
+    .logo-signin{
+        padding-left: 25px;
+    }
+    .logo{
+        margin-right: 0;
+    }
+}
+.discover-heading h2{
+    background-color: #d7e6f5;
+    text-align: center;
+    font-family: font-bold;
+    font-size: 20px;
+    color: #222222;
+    font-weight: 300;
+    letter-spacing: 0.35px;
+    line-height: 32px;
+    padding-top: 20px;
+}
+@media screen and (min-width:640px) {
+    .discover-heading h2{
+        font-size: 26px;
+        line-height: 42px;
+        padding: 18px 12px 0px 12px;
+    }
+}
+@media  screen and (min-width:900px) {
+    .discover-heading h2{
+        font-size: 32px;
+        line-height: 36px;
+        padding-top: 23px;
+        letter-spacing: 0.026ch;
+        max-width: 1400px;
+        margin-inline: auto;
+    }
+    .discover-heading{
+        background-color: #d7e6f5;
+    }
+    header{
+        margin-bottom: 10px;
+    }
+}
+.fashion-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 6px 6px 0px 6px;
+    row-gap: 10px;
+}
+.elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #222222;
+    font-family: font-medium;
+    font-size: 13px;
+    padding-inline: 6px;
+    z-index: 1;
+}
+.elements img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.elements p{
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 0.01ch;
+}
+.fashion-image{
+    width: 85px;
+    height: 85px;
+    margin: 12px 0px 7px;
+
+}
+.fashion{
+    position: relative;
+}
+.baground{
+    position: absolute;
+    width: 100vw;
+    height: 77%;
+    background-color: #d7e6f5;
+}
+@media screen and (min-width:375px) {
+    .fashion-image{
+        width: 94px;
+        height: 94px;
+    }
+    .elements{
+        padding-inline:8px ;
+    }
+}
+@media screen and (min-width:640px) {
+    .fashion-items{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        column-gap: 6px;
+        padding-top: 8px;
+    }
+    .fashion-image{
+        width: 82px;
+        height: 82px;
+        margin: 6px 0px 13px;
+    }
+    .baground{
+        height: 53.5%;
+    }
+    .elements{
+        padding-inline:15px;
+    }
+    .discover-heading h2{
+        transform: translateY(2px);
+    }
+}
+@media screen and (min-width:900px) {
+   .fashion-image{
+    width: 114px;
+    height: 114px;
+   } 
+   .elements p{
+    font-size: 16px;
+   }
+   .fashion-items{
+    column-gap: 0;
+    padding-inline: 18px;
+    max-width: 1400px;
+    margin-inline: auto;
+   }
+   .discover-heading{
+    padding-bottom: 11px;
+   }
+   .baground{
+    height: 51.5%;
+   }
+   .discover-heading h2{
+    max-width: 1400px;
+    margin-inline: auto;
+   }
+}
+@media screen and (min-width:1200px) {
+    .fashion-items{
+        padding-inline: 79px;
+    }
+    .elements p{
+        padding-inline: 5px;
+    }
+}
