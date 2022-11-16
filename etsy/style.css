@@ -269,6 +269,7 @@ header{
     width: 100vw;
     height: 77%;
     background-color: #d7e6f5;
+    top: -3px;
 }
 @media screen and (min-width:375px) {
     .fashion-image{
@@ -294,9 +295,9 @@ header{
     .baground{
         height: 53.5%;
     }
-    .elements{
+    /* .elements{
         padding-inline:15px;
-    }
+    } */
     .discover-heading h2{
         transform: translateY(2px);
     }
@@ -329,8 +330,234 @@ header{
 @media screen and (min-width:1200px) {
     .fashion-items{
         padding-inline: 79px;
+        width: 1200px;
+    }
+    .baground{
+        height: 52.5%;
     }
     .elements p{
-        padding-inline: 5px;
+        padding-inline: 7px;
+        line-height: 1.3;
+    }
+    .discover-heading h2{
+        transform: translateY(0px);
+    }
+}
+.item-list li{
+    position: relative;
+}
+.item-list li::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #222222;
+    transition: all 0.3s ease-in-out;
+}
+.item-list li:hover::after{
+     left: 0;
+     width: 100%;
+}
+.signin button:hover{
+    background-color: #f3f4f5;
+    border-radius: 20px;
+}
+.heart:hover{
+    background-color: #f3f4f5;
+    border-radius: 20px;
+    width: 24px;
+}
+.cart:hover{
+    background-color: #f3f4f5;
+    border-radius: 20px;
+    width: 24px;
+}
+.elements:hover img{
+    transform: scale(1.1);
+}
+.elements:hover p{
+    border-bottom: 2px solid #222222;
+}
+/* .first-image-section{
+    display: grid;
+    
+}
+.image-card{
+    text-decoration: none;
+    color: #222222;
+    font-family: font-medium;
+} */
+.products{
+    text-decoration: none;
+    color: #222222;
+
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0px 6px;
+}
+.product-items{
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 8px 6px;
+}
+.product-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.product-image{
+    border-radius: 8px;
+}
+.recently-viewed h2{
+    text-align: center;
+    font-family: font-regular;
+    color: #222222;
+    font-size: 24px;
+}
+.recently-viewed{
+    margin-top: 60px;
+    margin-bottom: 47px;
+}
+.product-details span{
+    font-size: 16px;
+    font-family: font-medium;
+}
+.discount{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.old{
+    font-size: 13px !important;
+    text-decoration: line-through;
+    color: #258635;
+    font-family: font-regular;
+}
+.offer{
+    font-size: 13px !important;
+    color: #258635;
+    font-family: font-regular;
+}
+.product-details p{
+    font-size: 11px;
+    font-family: font-medium;
+    background-color: #d4e9d7;
+    width: 78px;
+    padding: 2px;
+    border-radius: 8px;
+}
+.product-details{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.product-details h1{
+    font-size: 13px;
+    line-height: 18px;
+    color: #a61a2e;
+    font-family: font-regular;
+    font-weight: 100;
+}
+@media  screen and (min-width:365px) {
+    .price{
+        display: flex;
+        white-space: nowrap;
+        gap: 4px;
+    }
+}
+@media screen and (min-width:480px) {
+    .product-items{
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+        padding: 8px 6px;
+    }
+    .price{
+        display: contents;
+    }
+}
+@media screen and (min-width:640px) {
+   .recently-viewed h2{
+    font-size: 28px;
+   } 
+}
+@media screen and (min-width:566px) {
+    .price{
+        display: flex;
+        white-space: nowrap;
+        gap: 4px;
+    }
+}
+@media screen and (min-width:900px) {
+    .product-items{
+        flex-basis: 16.66%;
+        max-width: 16.66%;
+        padding: 8px 6px;
+    }
+    .price{
+        display: contents;
+    }
+    .product-items{
+        padding: 8px 8px;
+    }
+    .product-list{
+        padding: 0px 26px;
+    }
+}
+.heading-coco{
+    font-size: 16px;
+    font-family: font-medium;
+    text-decoration: none;
+    color: #222222;
+} 
+.shop{
+    font-size: 13px;
+    font-family: font-regular;
+    color: #222222;
+    text-decoration: none;
+}
+.coco-head{
+    text-align: left;
+    padding-left: 14px;
+}
+.our-picks-head{
+    text-align: left;
+    padding-left: 14px;
+}
+.heading-picks{
+    font-size: 16px;
+    font-family: font-medium;
+    text-decoration: none;
+    color: #222222;
+}
+.see{
+    font-size: 13px;
+    font-family: font-regular;
+    color: #222222;
+    text-decoration: none;
+}
+.second-imagecard{
+    margin-bottom: 60px;
+    max-width: 1400px;
+    margin-inline: auto;
+}
+.first-imagecard{
+    max-width: 1400px;
+    margin-inline: auto;
+}
+.third-imagecard{
+    max-width: 1400px;
+    margin-inline: auto;
+}
+@media screen and (min-width:900px) {
+    .our-picks-head{
+        padding-left: 5%;
+    }
+    .coco-head{
+        padding-left: 3%;
     }
 }
