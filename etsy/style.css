@@ -295,9 +295,6 @@ header{
     .baground{
         height: 53.5%;
     }
-    /* .elements{
-        padding-inline:15px;
-    } */
     .discover-heading h2{
         transform: translateY(2px);
     }
@@ -380,15 +377,6 @@ header{
 .elements:hover p{
     border-bottom: 2px solid #222222;
 }
-/* .first-image-section{
-    display: grid;
-    
-}
-.image-card{
-    text-decoration: none;
-    color: #222222;
-    font-family: font-medium;
-} */
 .products{
     text-decoration: none;
     color: #222222;
@@ -559,5 +547,166 @@ header{
     }
     .coco-head{
         padding-left: 3%;
+    }
+}
+.etsy-sellers{
+    margin-top: 50px;
+    padding: 0px 12px  60px;
+}
+.etsy-sellers h2{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    font-size: 16px;
+    font-family: font-regular;
+    padding-bottom: 8px;
+}
+.sponsored-image{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+}
+.sponsored-txt{
+    font-size: 13px;
+    color: #595959;
+    text-align: center;
+    font-family: font-regular;
+    padding-bottom: 18px;
+}
+.span1{
+    color: #595959;
+}
+.sponsored-price{
+    color: #222222;
+    font-size: 13px;
+    background-color: #ffff;
+    padding: 6px 9px;
+    position: absolute;
+    bottom: 9px;
+    left: 9px;
+    border-radius: 20px;
+    font-family: font-medium;
+
+}
+.sponsored-image-card{
+    position: relative;
+    flex-basis: 47%;
+    width: 50%;
+    border-radius: 12px;
+}
+.sponsored-image-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+@media screen and (min-width:640px) {
+    .sponsored-image-card{
+        flex-basis: 31.33%;
+    }
+    .sponsored-txt{
+        text-align: left;
+        font-size: 16px;
+    }
+    .etsy-sellers h2{
+        display: flex;
+        font-size: 28px;
+        justify-content: flex-start;
+    }
+    .etsy-sellers{
+        padding-left: 24px;
+        max-width: 1400px;
+        margin-inline: auto;
+    } 
+}
+@media screen and (min-width:900px) {
+    .sponsored-image-card{
+        flex-basis: 16.66%;
+    }
+}
+.selection-head a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: font-medium;
+    color: #222222;
+}
+.selection-head{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.selection-image-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 12px;
+}
+.selection-image-card{
+    flex-basis: 48.5%;
+    border: 0.25px solid #2222;
+    border-radius: 10px;
+}
+.selection-image-card-last{
+    flex-basis: 48.5%;
+    border: 0.25px solid #2222;
+    border-radius: 10px;
+}
+.selection-image-card img{
+    width: 100%;
+}
+.selection-image-card-last img{
+    width: 100%;
+}
+.selection-image-txt{
+    text-align: center;
+    padding: 10px 12px;
+}
+.selection-image-txt p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: font-regular;
+}
+.selection-image img{
+    border-radius: 10px 10px 0px 0px;
+}
+@media screen and (min-width:640px) {
+    .selection-image-card{
+        flex-basis: 31.33%;
+    }
+    .selection-image-card-last{
+        flex-basis: 31.33%;
+    }
+    .selection-image-cards{
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .selection-head a{
+        font-size: 28px;
+    }
+    .selection-head{
+        text-align: left;
+        margin-left: 3vw;
+    }
+    .our-selections{
+        max-width: 1400px;
+        margin-inline: auto;
+    }
+    .selection-image-txt p{
+        font-size: 20px;
+        color: #222222;
+        font-weight: 700;
+        line-height: 28px;
+    }
+}
+@media screen and (min-width:900px) {
+    .selection-image-card{
+        flex-basis: 18.5%;
+    }
+    .selection-image-card-last{
+        display: none;
+    }
+    .selection-image-txt p{
+        height: 64px;
     }
 }
