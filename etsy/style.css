@@ -876,4 +876,301 @@ header{
     margin-top: -12px;
     padding-top: 36px;
     text-align: center;
+    padding: 36px 30px;
+}
+.about-etsy-head p{
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 36px;
+    font-family: font-bold;
+    margin-bottom: 12px;
+}
+.about-etsy-head a{
+    font-size: 14px;
+    font-family: font-regular;
+    color: #222222;
+}
+.about-etsy-head{
+    margin-bottom: 30px;
+}
+.paragraph-head{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: font-regular;
+    margin-bottom: 18px;
+}
+.paragraph-details{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: font-regular;
+    display: inline;
+}
+.para-lead{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: font-regular;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+}
+.paragraph{
+    margin-bottom: 30px;
+}
+.about-etsy-help p{
+    font-size: 18px;
+    font-family: font-regular;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 14px;
+}
+.about-etsy-help a{
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 24px;
+    font-family: font-regular;
+    padding: 12px 18px;
+    text-decoration: none;
+    border: 2px solid #222222;
+    color: #222222;
+    width: 174.45px;
+    white-space: nowrap;
+}
+.about-etsy-help{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width:900px) {
+    .story{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 65px;
+    }
+    .paragraph{
+        flex-basis: 26.74%;
+        text-align: left;
+    }
+    .about-etsy{
+        max-width: 1400px;
+        margin-inline: auto;
+    }
+   
+}
+.footer-down-svg{
+     background-color: #4D6BC6;
+     position: relative;
+}
+.footer-down-svg svg{
+    position: absolute;
+}
+.renewable{
+    background-color: #4D6BC6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.renewable span{
+    font-size: 16px;
+    font-family: font-regular;
+    font-weight: 400;
+    line-height: 28px;
+    color: #ffff;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+}
+.footer-list button{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px;
+    font-size: 16px;
+    font-family: font-medium;
+    border: none;
+    background-color: #2f466c;
+    color: #ffff;
+}
+.footer-list-section {
+    background-color: #2f466c;
+    padding: 16px 0px;
+}
+.footer-list-section a{
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: font-medium;
+    font-size: 13px;
+    border: 2px solid #ffff;
+    margin-inline: auto;
+    max-width: 204.7px;
+    border-radius: 24px;
+    padding: 10px;
+}
+.media-partners{
+    background-color: #2f466c;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 21px;
+}
+@media screen and (min-width:900px) {
+    .renewable{
+        padding-top: 80px;
+    }
+}
+.footer-list-section-tab{
+    display: none;
+}
+@media screen and (min-width:640px) {
+    .footer-list-section{
+        display: none;
+    }
+    .footer-list-section-tab{
+        display: contents;
+    }
+    .shop-list-items span{
+          display: block;
+          font-size: 13px;
+          font-family: font-regular;
+          color: #ffff;
+          margin-bottom: 12px;
+    }
+    .shop-list{
+        background-color: #2f466c;
+        flex-basis: 24%;
+    }
+    .sell-list-items span{
+        display: block;
+          font-size: 13px;
+          font-family: font-regular;
+          color: #ffff;
+          margin-bottom: 12px;
+    }
+    .sell-list{
+        background-color: #2f466c;
+        flex-basis: 24%;
+    }
+    .about-list-items span{
+        display: block;
+          font-size: 13px;
+          font-family: font-regular;
+          color: #ffff;
+          margin-bottom: 12px;
+    }
+    .about-list{
+        background-color: #2f466c;
+        flex-basis: 24%;
+    }
+    .help-list-items span{
+        display: block;
+          font-size: 13px;
+          font-family: font-regular;
+          color: #ffff;
+          margin-bottom: 12px;
+    }
+    .help-list{
+        background-color: #2f466c;
+        flex-basis: 24%;
+    }
+    .download-lead{
+        color: #ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-family: font-medium;
+        font-size: 13px;
+        white-space: wrap;
+        border: 2px solid #ffff;
+        margin-inline: auto;
+        max-width: 204.7px;
+        border-radius: 24px;
+        padding: 10px;
+        background-color: #2f466c;
+        margin-left: 0;
+        gap: 8px;
+    }
+    .footer-list{
+        background-color: #2f466c;
+        display: flex;
+        padding: 3vw;
+    }
+    .footer-list button{
+        padding-left: 0;
+    }
+    .media-partners{
+        justify-content: flex-start;
+        gap: 0;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+}
+.footer-last-section{
+    background-color: #232347;
+    text-align: center;
+}
+.country {
+text-decoration: none;
+color: #ffff;
+display: flex;
+justify-content: center;
+padding-top: 22px;
+padding-bottom: 15px;
+}
+.country span{
+    font-size: 13px;
+    line-height: 1.4;
+    font-family: font-medium;
+}
+.copyright span{
+    font-size: 13px;
+    color: #ffff;
+    font-family: font-regular;
+}
+.copyright ul li a{
+    font-family: font-regular;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #ffff;
+}
+.copyright ul{
+    display: flex;
+    list-style-type: none;
+    /* width: 66%; */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    column-gap: 13px;
+    margin-top: 12px;
+    padding-bottom: 24px;
+    padding-inline: 74px;
+}
+@media screen and (min-width:900px) {
+    .footer-last-section{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copyright{
+        display: flex;
+        align-items: center;
+    }
+    .copyright ul{
+        margin-top: 19px;
+        padding-left: 9px;
+        padding-right: 3vw;
+    }
+    .country{
+        padding-left: 3vw;
+    }
 }
