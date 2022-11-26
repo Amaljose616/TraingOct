@@ -1,12 +1,17 @@
 .link{
+    display: flex;
+    align-items: center;
+    
     background-color: black;
     color: yellow;
     display: inline-block;
     padding: 20px;
     outline: 5px solid yellow;
+
 }
 ul{
     display: none;
+    transform: scale(1,0);
 }
 .link:hover{
     background-color: yellow;
@@ -16,7 +21,11 @@ ul{
 section{
     display: inline-block;
 }
-section:hover ul{
+.menu{
+  
+    
+}
+.menu:checked + ul{
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -26,8 +35,13 @@ section:hover ul{
     width: 100px;
     justify-content: center;
     align-items: center;
+    transform: scale(1,1);
+    transition: transform 400ms ease-in-out;
 
 }
 section ul li:hover{
     color: red;
+}
+.menu{
+    display: none;
 }
