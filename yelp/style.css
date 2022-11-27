@@ -1,0 +1,32 @@
+header{
+    background-color:darksalmon;
+}
+.nav-search{
+    display: flex;
+    align-items: center;
+}
+.search-items{
+    border: none;
+    font-size: 16px;
+    height: 22px;
+    padding: 13px 16px;
+}
+.search-items::after{
+    background-color: #ebebeb;
+    bottom: 12px;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 2px;
+    height: 10px;
+}
+.search-location{
+    border: none;
+    font-size: 16px;
+    height: 22px;
+    padding: 13px 16px;
+}
+.search-logo{
+    background-color: blue;
+}
