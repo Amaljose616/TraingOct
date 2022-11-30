@@ -1,0 +1,340 @@
+@font-face {
+    font-family: myfont;
+    src: url(assets/roboto-regular.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    background-color: #2874f0;
+    display: flex;
+    align-items: center;
+    height: 52px;
+    justify-content: space-between;
+}
+.logo{
+    width: 23px;
+    height: 23px;
+    transform: translateY(1px);
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.heading{
+    font-size: 16px;
+    font-family: myfont;
+    color: #ffff;
+    font-weight: 400;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 12px;
+    overflow: hidden;
+}
+.login{
+    font-size: 16px;
+    font-family: myfont;
+    color: #eaeaea;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-1px);
+}
+.nav-head{
+    display: flex;
+    align-items: center;
+}
+.nav-login{
+    display: flex;
+    align-items: center;
+    height: 52px;
+    position: absolute;
+    background-color: #2874f0;
+    right: 0;
+}
+.arrow{
+    width: 42px;
+    display: flex;
+    justify-content: center;
+}
+.cart{
+    display: flex;
+    width: 42px;
+    justify-content: center;
+}
+.search{
+    width: 42px;
+    display: flex;
+    justify-content: center;
+}
+.sort-filter{
+    display: flex;
+    width: 100%;
+    height: 48px;
+    position: sticky;
+    top: 0;
+    background-color: #ffff;
+    z-index: 1;
+}
+.sort, .filter{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    height: 48px;
+}
+.sort-icon, .filter-icon{
+    width: 24px;
+    height: 24px;
+}
+.sort-icon img, .filter-icon img{
+    width: 100%;
+    height: 100%;
+}
+.sort-txt, .filter-txt{
+    font-size: 14px;
+    font-family:Roboto Medium,Roboto-Medium,Droid Sans,HelveticaNeue-Medium,Helvetica Neue Medium,sans-serif-medium;
+    transform: translateX(-0.5px);
+    line-height: 13px;
+}
+.sort{
+    border-right: 1px solid rgb(0 0 0 /10%);
+}
+.element-logo{
+    width: 36px;
+    height: 32px;
+    margin-right: 4px;
+    transform: translateY(-1px);
+}
+.element-logo img{
+    width: 32px;
+    height: 32px;
+}
+.element-txt-special,.element-txt{
+    font-size: 12px;
+    color: #212121;
+    font-family:myfont;
+    width: 58.47px;
+    line-height: 17px;
+}
+.first-item, .last-item,.item-elements{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(0 0 0 /10%);
+    border-radius: 4px;
+    margin: 8px 4px 0px;
+    padding: 3px 8px 1px 4px;
+}
+.list{
+    display: flex;
+    overflow-x: scroll;
+    padding-inline: 11px;
+    padding-bottom: 8px;
+}
+.list::-webkit-scrollbar{
+    display: none;
+}
+.item-elements{
+    padding-right: 3px;
+    background-color: #f5f7fa;
+    color:  rgb(113, 116, 120) !important;
+}
+.item-elements .element-txt{
+    color:  rgb(113, 116, 120) !important;
+}
+.border{
+    display: flex;
+    position: sticky;
+    left: 0;
+    top: 48px;
+    right: 0;
+    height: 4px;
+    /* z-index: 1; */
+}
+.border img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: fill;
+    opacity: 1;
+}
+.list :nth-child(2) .element-txt{
+    transform: translateX(-0.4px);
+}
+.ad-image{
+    width: 96px;
+    height: 111.5px;
+    margin-top: 19px;
+    margin-left: 5px;
+}
+.ad-image img{
+    width: 100%;
+    height: 100%;
+}
+.ad-name{
+    color: #212121;
+    font-family: myfont;
+    font-size: 14px;
+    width: 163px;
+    margin-bottom: 8px;
+    
+}
+.rating{
+    display: flex;
+    align-items: center;
+    background-color: #008c00;
+    padding: 1px 6px;
+    height: 19px;
+    border-radius: 4px;
+}
+.rating-value{
+    font-size: 12px;
+    font-family: auto;
+    color: #ffff;
+    padding: 2px 0px;
+}
+.star{
+    color: #ffff;
+    font-size: 11px;
+    margin-left: 2px;
+}
+.review{
+    font-size: 12px;
+    font-family: myfont;
+    color: #878787;
+    margin-left: 5px;
+    transform: translateY(-1px);
+    margin-right: 1px;
+}
+.assure-logo{
+    width: 55.02px;
+    height: 13px;
+    transform: translateY(-1px);
+}
+.assure-logo img{
+    width: 100%;
+    height: 100%;
+}
+.rating-review{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.price{
+    font-size: 16px;
+    font-family: auto;
+    margin-bottom: 3px;
+}
+.delivery{
+    font-size: 12px;
+    font-family: myfont;
+    margin-bottom: 6px;
+}
+.offer{
+    font-size: 12px;
+    font-family: auto;
+    color: #26a541;
+}
+.variable-element{
+     font-size: 12px;
+     color: #878787;
+     padding: 3.5px 8px;
+     margin: 0px 0px 10px 10px;
+     font-family: auto;
+     border: 1px solid rgb(0 0 0 /6%);
+}
+.fav-img{
+    width: 18px;
+    height: 22px;
+    transform: translateY(1px);
+}
+.fav-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.fav{
+    width: 36px;
+    height: 36px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,1.00);
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.ad-section{
+    position: relative;
+    border-bottom: 1px solid rgb(0 0 0 /6%);
+}
+.ad-details{
+    display: flex;
+    padding: 12px 0px;
+}
+.ad-specs{
+    margin: 10px 0px 6px;
+    padding: 0px 20px 0px 12px;
+}
+.variables{
+    display: flex;
+    flex-wrap: wrap;
+}
+.deal-img{
+    width: 70px;
+    height: 70px;
+}
+.deal-img img{
+    width: 100%;
+    height: 100%;
+}
+.deal-title{
+    font-size: 16px;
+    font-family: auto;
+    color: #212121;
+    margin-bottom: 2px;
+}
+.deal-txt{
+    font-family: myfont;
+    font-size: 12px;
+    color: #878787;
+}
+.right-arrow{
+    width: 6px;
+    height: 10px;
+}
+.right-arrow img{
+    width: 100%;
+    height: 100%;
+    transform: translate(1px, -3px);
+}
+.deals{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background-color: #ffff;
+}
+.deal-txt-main{
+    padding: 0px 20px 0px 18px;
+    width: 172px;
+}
+.limited-deals{
+    background-color: #f0f0f0;
+    padding: 8px 0px;
+    padding-bottom: 9px;
+}
+.old-price{
+    font-size: 12px;
+    font-family: auto;
+    color: #878787;
+    text-decoration: line-through;
+    margin-right: 7px;
+}
+section{
+    margin-top: -4px;
+}
