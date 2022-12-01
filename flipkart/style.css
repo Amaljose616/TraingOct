@@ -12,6 +12,7 @@
     align-items: center;
     height: 52px;
     justify-content: space-between;
+    padding-top: 4px;
 }
 .logo{
     width: 23px;
@@ -336,4 +337,204 @@
 }
 section{
     margin-top: -4px;
+}
+.desktop{
+    display: none;
+}
+@media screen and (min-width:950px) {
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .nav-bar-lap{
+        background-color: #2874f0;
+    }
+    .nav-head-lap{
+        display: flex;
+        align-items: center;
+        padding-top: 4px;
+    }
+    .more-lap{
+        display: flex;
+        gap: 6px;
+        margin-inline: 20px;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: roboto;
+        letter-spacing: .1px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    .cart-lap{
+        display: flex;
+        gap: 6px;
+        color: #ffffff;
+        margin-inline: 20px;
+        font-size: 16px;
+        font-family: roboto;
+        letter-spacing: 0.1px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    .flip-txt-img{
+        width: 75px;
+        float: right;
+    }
+    .flip-txt-img img{
+        width: 97%;
+        transform: translate(3px,1px);
+    }
+    .plus-link{
+        display: flex;
+        text-decoration: none;
+        font-size: 11px;
+        font-family: Roboto,Arial,sans-serif;
+        color: #f0f0f0;
+        margin-top: -6px;
+        font-style: italic;
+        float: right;
+        transform: translate(-2px, 2px);
+    }
+    .plus-img{
+        width: 10px;
+        height: 18px;
+    }
+    .plus-img img{
+        width: 100%;
+    }
+    .plus{
+        font-family: Roboto,Arial,sans-serif;
+        font-style: italic;
+        font-size: 11px;
+        color: #ffe500;
+        margin: 0px 2px 0px 2px;
+        text-decoration: none;
+    }
+    .search-lap{
+        background-color: #ffff;
+        display: flex;
+        align-items: center;
+        border-radius: 2px;
+        margin-left: 12px;
+        transform: translateY(-1px);
+        border: 1px solid #dbdbdb;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .product-search{
+        outline: none;
+        border: none;
+        width: 230px;
+        height: 35px;
+        padding-inline: 15px;
+        border-radius: 2px;
+        letter-spacing: -0.01ch;
+    }
+    .search-icon-lap{
+        width: 20px;
+        height: 20px;
+        padding: 1px 12px 0px 2px;
+    }
+    .space{
+        width: 124px;
+        height: 56px;
+        margin-right: 177px;
+    }
+    .flip-logo-lap{
+        width: 128px;
+    }
+    .login-link-lap{
+        text-decoration: none;
+        color: #2874f0;
+        background-color: #ffffff;
+        font-size: 16px;
+        padding: 5px 39px;
+        border: 1px solid #dbdbdb;
+        height: 32px;
+        font-weight: 500;
+        font-family: roboto;
+        margin-inline: 20px;
+        margin-left: 19px;
+    }
+    .seller-link-lap{
+        font-size: 16px;
+        font-family: roboto;
+        color: #ffffff;
+        white-space: nowrap;
+        text-decoration: none;
+        font-size: 500;
+        line-height: 20px;
+        letter-spacing: -0.08px;
+        margin-inline: 20px;
+        margin-left: 18px;
+    }
+    .down-arrow{
+        transform: rotate(270deg);
+    }
+    .login-lap{
+        margin-bottom: 3px;
+    }
+    .item-lap{
+        font-size: 14px;
+        font-family: roboto;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+    .item-lap svg{
+        transform: rotate(270deg);
+    }
+    .item-list-lap{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 9px;
+        max-width: 1248px;
+        margin-inline: auto;
+    }
+    .desktop{
+        overflow: hidden;
+    }
+    .elements-list-lap{
+        padding-bottom: 13px;
+        border-bottom: 1px solid rgb(0 0 0 / 16%);
+    }
+    .container{
+        background-color: #f0f0f0;
+    }
+    .mobile-img{
+        width: 270px;
+        height: 145.5px;
+    }
+    .mobile-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .side-container-one-txt-head{
+        font-size: 16px;
+        color: #212121;
+        font-family: Roboto,Arial,sans-serif;
+        font-weight: 500;
+        line-height: 1.2;
+        width: 238px;
+    }
+    .side-container-one-txt-content{
+        font-size: 12px;
+        font-family: roboto;
+        color: #212121;
+        margin: 2px 0px 0px;
+        width: 238px;
+    }
+    .side-container-one-txt{
+        background-color: #ffffff;
+        width: 238px;
+        padding:16px ;
+    }
+}
+@media screen and (min-width:1440px) {
+    .search-lap{
+        margin-right: 20px;
+    }
 }
