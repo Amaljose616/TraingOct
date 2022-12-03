@@ -1,0 +1,22 @@
+.back{
+    background-image: url(https://media.istockphoto.com/id/1255056515/photo/winter-station.jpg?s=612x612&w=0&k=20&c=_zFOf1DwRGwzXvKmlOHaymVLtf4RLcD-GRMyfNHeZBU=);
+    background-repeat: norepeat;
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    align-items: center;
+}
+h1{
+    margin: 10px 0px;
+}
+h2{
+    font-size: 50px;
+}
+button{
+    font-size: 24px;
+    font-weight: bold;
+}
+#increment-btn{
+    background-color: greenyellow;
+}
