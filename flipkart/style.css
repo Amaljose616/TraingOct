@@ -810,15 +810,36 @@ section{
         padding-bottom: 4px;
     }
     .mobile-img-lap{
-        width: 200px;
-        height: 200px;
+        width: 166px;
+        height: 194px;
     }
     .mobile-img-lap img{
         width: 100%;
         height: 100%;
         margin: 0px 14.4375px 0px 14.219px;
     }
-}
+    .ad-lap{
+        padding: 24px 0px 30px  24px;
+        display: flex;
+    }
+    .assured-lap-img{
+        width: 77px;
+        height: 21px;
+    }
+    .assured-lap-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .mobile-ad-img-details{
+        display: flex;
+    }
+    .compare span{
+        font-size: 13px;
+        font-family: roboto;
+        color: #212121;
+        letter-spacing: 0.02ch;
+    }
+} 
 @media screen and (min-width:1440px) {
     .search-lap{
         margin-right: 20px;
