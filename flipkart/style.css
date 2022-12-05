@@ -755,6 +755,8 @@ section{
     }
     .sub-container{
         display: flex;
+        max-width: 1500px;
+        margin-inline:auto ;
     }
     .main-container{
         background-color: #ffffff;
@@ -942,12 +944,13 @@ section{
         color: #26a541 !important;
     }
     .ad-container :nth-child(10){
-        border-bottom: 8px solid rgb(0 0 0 / 6%);
+        border-bottom: 3px solid rgb(0 0 0 / 6%);
     }
     .page-number{
         display: flex;
         padding: 21px;
         gap: 83px;
+        border-bottom: 12px solid rgb(0 0 0 / 6%);
     }
     .page-number a{
         text-decoration: none;
@@ -976,6 +979,21 @@ section{
     }
     .numbers :nth-child(10){
         border-bottom: 0;
+    }
+    .find{
+        display: flex;
+        padding: 24px;
+    }
+    .find-question{
+        font-size: 16px;
+        font-weight: 500;
+        font-family: roboto;
+    }
+    .find-yes, .find-no {
+        background-color: #ffff;
+        border: 1px solid #d7d7d7;
+        padding: 6px 28px;
+        margin-left: 33px;
     }
 } 
 @media screen and (min-width:1440px) {

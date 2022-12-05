@@ -90,43 +90,57 @@
 //     console.log("priceEl")
 // }
 
-let num1 = 8
-let num2 = 16
+// let num1 = 8
+// let num2 = 16
 
-document.getElementById("num1-el").textContent = num1
-document.getElementById("num2-el").textContent = num2
-let result = document.getElementById("sum-el")
-function add(){
-    let add = num1 + num2
-    console.log(add)
-    result.innerText = "Result : " + add
-}
-function sub(){
-    let sub = num1 - num2
-    console.log(sub)
-    result.innerText = "Result : " + sub
-}
-function divide(){
-    let div = num1 / num2
-    console.log(div)
-    result.innerText = "Result : " + div
+// document.getElementById("num1-el").textContent = num1
+// document.getElementById("num2-el").textContent = num2
+// let result = document.getElementById("sum-el")
+// function add(){
+//     let add = num1 + num2
+//     console.log(add)
+//     result.innerText = "Result : " + add
+// }
+// function sub(){
+//     let sub = num1 - num2
+//     console.log(sub)
+//     result.innerText = "Result : " + sub
+// }
+// function divide(){
+//     let div = num1 / num2
+//     console.log(div)
+//     result.innerText = "Result : " + div
 
-}
-function multi(){
-    let multi = num1 * num2
-    console.log(multi)
-    result.innerText = "Result : " + multi
-}
+// }
+// function multi(){
+//     let multi = num1 * num2
+//     console.log(multi)
+//     result.innerText = "Result : " + multi
+// }
 
 
 let firstcard = 10
-let secondcard = 11
+let secondcard = 15
 let sum = firstcard + secondcard
 
-if (sum < 21){
+let hasBlackJack = false
+let isAlive = true
+if (sum <= 20){
     console.log("do you want to draw a new card ? :-")
 }else if (sum === 21){
-    console.log("woho0! you've got Blackjack !! :)")
-}else if (sum > 21){
+    console.log("wohoo! you've got Blackjack !! :)")
+    hasBlackJack = true
+}else{
     console.log("you'are out of the game ! :(")
+    isAlive = false
 }
+
+console.log(isAlive)
+// let age = 110
+
+// if (age < 100){
+//     console.log("Not elegible")
+// }else if (age === 100){
+//     console.log("Here is your birthday card from the king!")
+// }else {
+//     console.log("Not eligible, you have already gotten one")
