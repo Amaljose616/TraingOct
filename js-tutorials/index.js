@@ -117,30 +117,65 @@
 //     console.log(multi)
 //     result.innerText = "Result : " + multi
 // }
-
-
-let firstcard = 10
-let secondcard = 15
-let sum = firstcard + secondcard
-
-let hasBlackJack = false
-let isAlive = true
-if (sum <= 20){
-    console.log("do you want to draw a new card ? :-")
-}else if (sum === 21){
-    console.log("wohoo! you've got Blackjack !! :)")
-    hasBlackJack = true
-}else{
-    console.log("you'are out of the game ! :(")
-    isAlive = false
-}
-
-console.log(isAlive)
 // let age = 110
 
+
 // if (age < 100){
-//     console.log("Not elegible")
+//     console.log("Not elegible"
 // }else if (age === 100){
 //     console.log("Here is your birthday card from the king!")
 // }else {
 //     console.log("Not eligible, you have already gotten one")
+// let variable = ["a","b","c"]
+
+// let nvariable = "d"
+
+// variable.push(nvariable)
+
+// console.log(variable)
+
+// for (count = 0; count < 11 ; count += 1){
+//     console.log(count)
+// }
+
+// let sentence = ["hello","my","name","is","Amal"]
+// let greetingEl = document.getElementById("greeting-el")
+// for(let i = 0; i < sentence.length; i++){
+//     greetingEl.textContent += sentence[i] + " "
+// }
+
+let firstcard = 9
+let secondcard = 10
+let cards = [firstcard,secondcard]
+let sum = firstcard + secondcard
+let hasBlackJack = false
+let isAlive = true
+let message = ""
+let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-txt")
+let cardEl = document.getElementById("card-el")
+function startGame(){
+    renderGame()
+}
+function renderGame(){
+    cardEl.textContent = "cards:" + cards[0] + " " + cards[1] 
+    sumEl.textContent = "Sum:" + sum
+if (sum <= 20){
+    message = "do you want to draw a new card ? :|"
+}else if (sum === 21){
+    message = "wohoo! you've got Blackjack !! :)"
+    hasBlackJack = true
+}else{
+    message = "you'are out of the game ! :("
+    isAlive = false
+}
+messageEl.textContent = message
+console.log(message)
+}
+function newCard(){
+    let card = 2
+    sum += card
+    renderGame()
+    cards.push(card)
+    console.log(cards)
+}

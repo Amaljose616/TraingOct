@@ -995,6 +995,52 @@ section{
         padding: 6px 28px;
         margin-left: 33px;
     }
+    .footer-list{
+        display: flex;
+        justify-content: space-around;
+        padding-block: 40px;
+    }
+    footer li{
+        list-style-type: none;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: roboto;
+        color: #ffffff;
+        margin-bottom: 12px;
+    }
+    .footer-list p{
+        font-size: 12px;
+        font-weight: 400;
+        font-family: auto;
+        color: #878787;
+        margin-bottom: 8px;
+    }
+    footer{
+        background-color:  #172337;
+    }
+    .mail-list{
+        border-left: 1px solid #878787;
+        padding-left: 12px;
+        height: 130px;
+    }
+    .footer-link-list{
+        border-top: 1px solid #878787;
+        padding: 20px 0px;
+    }
+    .footer-link-list ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .footer-link-list ul li{
+        display: flex;
+        align-items: center;
+        font-size: 14px !important;
+        gap: 8px;
+    }
+    .phone-num{
+        color: #2874f0;
+    }
 } 
 @media screen and (min-width:1440px) {
     .search-lap{
