@@ -1,4 +1,4 @@
-.back{
+/* .back{
     background-image: url(https://media.istockphoto.com/id/1255056515/photo/winter-station.jpg?s=612x612&w=0&k=20&c=_zFOf1DwRGwzXvKmlOHaymVLtf4RLcD-GRMyfNHeZBU=);
     background-repeat: norepeat;
     background-size: cover;
@@ -16,7 +16,75 @@ h2{
 button{
     font-size: 24px;
     font-weight: bold;
+    color: #fff;
+}
+#price-btn{
+    background-color: purple;
 }
 #increment-btn{
     background-color: greenyellow;
+}
+#save-btn{
+    background-color: red;
+}
+p{
+    font-size: 24px;
+    color: blue;
+    font-weight: 600;
+}
+#price-el{
+    font-size: 12px;
+    color: red;
+} */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game{
+    background-color: rgb(4, 50, 4);
+    text-align: center;
+    max-width: 900px;
+    margin-inline:auto ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    color: rgb(202, 202, 32);
+    font-size: 50px;
+}
+h3, p{
+    color: #ffffff;
+    margin-top: 12px;
+}
+button{
+    color: #ffffff;
+    width: 150px;
+    background-color: goldenrod;
+    margin-top: 24px;
+    padding: 8px 12px;
+} */
+
+body{
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{ 
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box  ;
+    border: 1px solid #5f9341;
+    margin-bottom: 4px;
+}
+button{
+    background-color: #5f9341;
+    color: #ffff;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
 }
