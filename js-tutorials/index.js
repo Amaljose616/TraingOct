@@ -212,7 +212,11 @@
 //     }
 // }
 
+let number = 12
 
+function primeNumber(){
+
+}
 
 
 
@@ -240,20 +244,20 @@
 // let totalTime = getTotalRaceTime()
 // console.log(totalTime)
 
-let x = 1000000
-let y = 534
-let z = 5200000000
-function greatestNumber() {
-    if (x > y && x > z){
-        return x
-    }else if (y > x && y > z){
-        return y
-    }else if (z > x && z > y){
-        return z
-    }
-}
-let result = greatestNumber()
-console.log (result)
+// let x = 1000000
+// let y = 534
+// let z = 5200000000
+// function greatestNumber() {
+//     if (x > y && x > z){
+//         return x
+//     }else if (y > x && y > z){
+//         return y
+//     }else if (z > x && z > y){
+//         return z
+//     }
+// }
+// let result = greatestNumber()
+// console.log (result)
 
 
 // function rollDice(){
@@ -340,7 +344,7 @@ console.log (result)
 //     divEl.innerHTML = "<p>ThankYou </p>"
 // }
 
-let a = 4
+let a = 8
 let p = "not a prime number"
 let q = "it's prime number"
 for(let i = 2 ; i < a ; i++){
@@ -355,7 +359,7 @@ for(let i = 2 ; i < a ; i++){
 // let a = 10
 // let x = "not a prime number"
 // let y = "it's prime number"
-// function prime(){
+
 // for(i=0;i<a;i++){
 //     if(a = 2){
 //         return y
@@ -369,5 +373,5 @@ for(let i = 2 ; i < a ; i++){
 //         return x
 //     }
 // }
-// }
-// console.log(prime())
+
+// // console.log(prime())
