@@ -212,11 +212,11 @@
 //     }
 // }
 
-let number = 12
+// let number = 12
 
-function primeNumber(){
+// function primeNumber(){
 
-}
+// }
 
 
 
@@ -344,17 +344,17 @@ function primeNumber(){
 //     divEl.innerHTML = "<p>ThankYou </p>"
 // }
 
-let a = 8
-let p = "not a prime number"
-let q = "it's prime number"
-for(let i = 2 ; i < a ; i++){
-    if(a % i === 0){
-        console.log(p)
-    }
-        else{
-        console.log(q)
-    }
-}
+// let a = 8
+// let p = "not a prime number"
+// let q = "it's prime number"
+// for(let i = 2 ; i < a ; i++){
+//     if(a % i === 0){
+//         console.log(p)
+//     }
+//         else{
+//         console.log(q)
+//     }
+// }
 
 // let a = 10
 // let x = "not a prime number"
@@ -375,3 +375,44 @@ for(let i = 2 ; i < a ; i++){
 // }
 
 // // console.log(prime())
+
+
+// let count = 0
+// for (count = 0 ; count < 11 ; count=count + 2){
+//     console.log(count)
+// }
+// let resultEl = document.getElementById("result-el")
+
+//  for (let i = 1; i < 11 ; i++){
+//     for (let j = 1 ; j < 11 ; j++){
+//     let result = i * j
+//     console.log(result)
+//     }}
+
+// let km = 10
+// let kmMileRatio = 0.621371
+//  let miles = km * kmMileRatio
+//  console.log(miles)
+ 
+
+// let a = 21
+// let b = 0
+// let c = a / b
+// console.log (c)
+
+// let lastNameLength = 0
+// let lastName = "Lovelace"
+// lastNameLength = lastName.length
+// console.log(lastNameLength)
+
+// function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
+//     var result = ""
+//     result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store"
+//     return result
+// }
+// console.log(wordBlanks("dog", "big" , "ran" ,"quickly"))
+
+function greet (name){
+    console.log("hello " + name)
+}
+greet ("amal")
