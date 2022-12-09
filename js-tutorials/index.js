@@ -21,7 +21,7 @@
 
 //  number = number + 1
 //   console.log  (number)
-
+//
 //   let bonusPoints = 50
 //    bonusPoints += 50
 //    bonusPoints -= 25
