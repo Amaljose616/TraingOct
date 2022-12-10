@@ -266,26 +266,26 @@
 // }
 // console.log (rollDice())
 
-// let x = 100
-// let y = 20
-// let z = 50
+let x = 100
+let y = 20
+let z = 50
 
-// function greatest() {
-//     if (x > y){
-//         if (x > z){
-//             return x
-//         }
-//     } else if (y > x){
-//         if(y > z){
-//             return y
-//         }
-//     }else{
-//         return z
-//     }
-// }
-// let result = greatest()
+function greatest() {
+    if (x > y){
+        if (x > z){
+            return x
+        }
+    } else if (y > x){
+        if(y > z){
+            return y
+        }
+    }else{
+        return z
+    }
+}
+let result = greatest()
 
-// console.log (result)
+console.log (result)
 
 // let Name = "Amal"
 // let Age = 21 
@@ -344,17 +344,21 @@
 //     divEl.innerHTML = "<p>ThankYou </p>"
 // }
 
-// let a = 8
-// let p = "not a prime number"
-// let q = "it's prime number"
-// for(let i = 2 ; i < a ; i++){
-//     if(a % i === 0){
-//         console.log(p)
-//     }
-//         else{
-//         console.log(q)
-//     }
-// }
+let a = 1
+let p = "not a prime number"
+let q = "it's prime number"
+for(let i = 2 ; i < a ; i++){
+    if(a % i === 0){
+        console.log(p)
+    }
+        else{
+        console.log(q)
+    }
+}if(a===2){
+    console.log(q)
+}else if (a == 1){
+    console.log("neither a prime nor a composite")
+}
 
 // let a = 10
 // let x = "not a prime number"
@@ -412,7 +416,7 @@
 // }
 // console.log(wordBlanks("dog", "big" , "ran" ,"quickly"))
 
-function greet (name){
-    console.log("hello " + name)
-}
-greet ("amal")
+// function greet (name){
+//     console.log("hello " + name)
+// }
+// greet ("amal")
