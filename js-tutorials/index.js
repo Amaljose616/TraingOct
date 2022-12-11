@@ -17,7 +17,7 @@
 //  let dogAge = age * humanDogRatio
 //  console.log (dogAge)
 
-//  let number = 1
+  let number = 1
 
 //  number = number + 1
 //   console.log  (number)
