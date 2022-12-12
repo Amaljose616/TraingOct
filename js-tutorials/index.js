@@ -605,24 +605,91 @@
 // var gloveBoxContents = myStorage.car.inside["glove box"]
 // console.log(gloveBoxContents)
 
-var myPlants = [
-    {
-        type:"flowers",
-        list:[
-            "rose",
-            "tulip",
-            "dandelion"
-        ]
-    },
-    {
-        type:"trees",
-        list : [
-            "fir",
-            "pine",
-            "birch"
-        ]
+// var myPlants = [
+//     {
+//         type:"flowers",
+//         list:[
+//             "rose",
+//             "tulip",
+//             "dandelion"
+//         ]
+//     },
+//     {
+//         type:"trees",
+//         list : [
+//             "fir",
+//             "pine",
+//             "birch"
+//         ]
 
-    }
-]
-var secondTree = myPlants[1].list[1]
-console.log(secondTree)
+//     }
+// ]
+// var secondTree = myPlants[1].list[1]
+// console.log(secondTree)
+
+// var collection = {
+//     "2548":
+//     {
+//         "album":"Slippery When Wet",
+//         "artist":"prince",
+//         "tracks":[
+//             "1999","Little Red  Covertte"
+//         ]
+
+//     },
+//     "1245":{
+//         "artist":"Robert Palmer",
+//         "tracks" : []
+//     },
+//     "5439"{
+//         "album":"ABBA Gold"
+//     }
+// }
+// var collectionCopy = JSON.parse(JSON.stringify(collection))
+// function updateRecords(id, prop, value){
+//     if(value === ""){
+//         delete collection[id][prop]
+//     }else if (prop === "tracks"){
+//        collection[id][prop] = collection  || []
+//        collection[id][prop].push(value)
+//     }else{
+//         collection[id][prop] = value
+//     }
+//     return collection
+// }
+
+// updateRecords(5439, "artist","ABBA")
+
+// var myArray = []
+// var i = 0
+// while(i < 5){
+//      myArray.push(i)
+//      i++
+// }
+// console.log(myArray)
+
+// var  OurArray = []
+ 
+// for (var i = 0; i <  5 ; i++){
+//     OurArray.push(i)
+// }
+
+// var myArray = []
+// for (var i = 1; i < 6; i++){
+//     myArray.push(i)
+// }
+// console.log(myArray)
+
+// var ourArray = []
+
+// for (var i = 1 ; i<10 ; i += 2){
+//     ourArray.push(i)
+// }
+// console.log(ourArray)
+
+var ourArray = []
+
+for (var i = 10 ; i>0 ; i -= 2){
+    ourArray.push(i)
+}
+console.log(ourArray)
