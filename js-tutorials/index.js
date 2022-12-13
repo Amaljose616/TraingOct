@@ -1,4 +1,4 @@
- // let count = 0
+// let count = 0
 // console.log (count) 
 
 // let myAge = 35
@@ -397,7 +397,7 @@
 // let kmMileRatio = 0.621371
 //  let miles = km * kmMileRatio
 //  console.log(miles)
- 
+
 
 // let a = 21
 // let b = 0
@@ -596,7 +596,7 @@
 //             "glove box":"maps",
 //             "passenger seat":"crumbs"
 //         },
-    
+
 //     "outside":{
 //         "trunk":"jack"
 //     }
@@ -669,7 +669,7 @@
 // console.log(myArray)
 
 // var  OurArray = []
- 
+
 // for (var i = 0; i <  5 ; i++){
 //     OurArray.push(i)
 // }
@@ -687,9 +687,153 @@
 // }
 // console.log(ourArray)
 
-var ourArray = []
+// var ourArray = []
 
-for (var i = 10 ; i>0 ; i -= 2){
-    ourArray.push(i)
-}
-console.log(ourArray)
+// for (var i = 10 ; i>0 ; i -= 2){
+//     ourArray.push(i)
+// }
+// console.log(ourArray)
+
+// var ourArr = [9, 10, 11, 12]
+// var ourTotal = 0
+
+// for (var i = 0; i < ourArr.length ;i++){
+//     ourTotal += ourArr[i]
+// }
+// console.log(ourTotal)
+
+//  var myArray = []
+//  var i = 10
+
+//  do{
+//     myArray.push(i)
+//     i++
+//  }while(i < 5)
+
+// let sample = 2
+// console.log(sample)
+
+// alert("hello world")
+
+// let js= "amazing"
+// console.log(48+23-10)
+
+// let firstName = "jonas"
+// console.log(firstName)
+
+// let myFirstJob = "programmer"
+// let myCurrentJob = "teacher"
+// console.log(myFirstJob)
+// console.log(myCurrentJob)
+
+// let country = "india"
+// let continent = "asia"
+// let population = "10 million"
+// console.log(country, continent, population)
+
+// let javaScriptIsFun = true
+// console.log(typeof javaScriptIsFun)
+// console.log(typeof 45)
+// console.log(typeof "hello")
+// console.log(typeof null)
+
+// var element = 5622
+// let sample = 566
+
+// element = 9888
+// sample = 123
+
+// console.log(element, sample)
+
+// let age = 30
+// age = 32
+
+// const birthyear = 1991
+
+//  var job = "programmer"
+//  job = "teacher"
+//  lastName = "krish"
+//  console.log(lastName)
+
+//  firstName = "gopz"
+//  console.log(firstName)
+
+// const ageAmal = 2022 -2000
+// const ageAshlin =2022 - 2004
+// console.log(ageAmal - ageAshlin)
+
+// let cube = 2 ** (1/2)
+// console.log(cube)
+
+// firstName = "amal"
+// lastName = "jose"
+// console.log(firstName + " " + lastName)
+
+// let x = 10 + 5
+// x += 10 
+// let y = 8
+// console.log(x > y)
+
+//  let x =58
+//  let y = 36
+//  let avg = (x+y)/2
+//  console.log(avg)
+
+// let markMass = 78
+// let markheight = 1.69
+// let markBmi = markMass / (markheight * markheight)
+
+// let johnMass = 85
+// let johnHeight = 1.95
+// let johnBmi = johnMass / (johnHeight * johnHeight)
+// let markHigherBmi = markBmi > johnBmi
+// console.log(markBmi, johnBmi, markHigherBmi)
+
+// let firstName = "Amal"
+// let job = "software developer"
+// let birthYear = 2000
+// let year = 2022
+// let amal = "I'm "+ firstName +", a " + (year - birthYear) +  "years old " + job + "!"
+// let amalNew = `I'm ${firstName}, a ${year-birthYear} year old ${job}!`
+// console.log(amalNew)
+// console.log(amal)
+
+// const age = 15
+// const isOldEnough = age >= 18
+// if(isOldEnough){
+//     console.log("sarh can start driviing licence")
+// }else {
+//     const yearsLeft = 18 - age
+//     console.log(`sarh is too young. wait another ${yearsLeft} years :)`)
+// }
+
+// const birthYear =1999
+// if (birthday <= 2000){
+//     let century = 20
+// }else{
+//     century = 21
+// }
+// console.log(century)
+
+// const inputYear = '1911'
+// console.log(Number(inputYear)+18)
+// console.log(inputYear+ 18)
+
+
+let money = 1
+
+if (money){
+    console.log("don't spend it all")
+}else{
+    console.log("you should get a job")
+} 
+ let favorite = Number(prompt("what's your favorite number "))
+ if (favorite === 23){
+    console.log("23 is cool number")
+ }else if (favorite === 7){
+    console.log("7 is also a cool number")
+ }else{
+    console.log("neither 23 nor 7")
+ }
+let letter = favorite * 12
+console.log(letter)
