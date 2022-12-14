@@ -21,7 +21,7 @@
 
 //  number = number + 1
 //   console.log  (number)
-//
+
 //   let bonusPoints = 50
 //    bonusPoints += 50
 //    bonusPoints -= 25
@@ -29,7 +29,7 @@
 //    console.log (bonusPoints)
 
 // document.getElementById("count-el").innerText=10
-// 
+
 
 // let text = "hello how are you"
 // console.log(text)
@@ -820,20 +820,154 @@
 // console.log(inputYear+ 18)
 
 
-let money = 1
+// let money = 1
 
-if (money){
-    console.log("don't spend it all")
-}else{
-    console.log("you should get a job")
-} 
- let favorite = Number(prompt("what's your favorite number "))
- if (favorite === 23){
-    console.log("23 is cool number")
- }else if (favorite === 7){
-    console.log("7 is also a cool number")
- }else{
-    console.log("neither 23 nor 7")
- }
-let letter = favorite * 12
-console.log(letter)
+// if (money){
+//     console.log("don't spend it all")
+// }else{
+//     console.log("you should get a job")
+// } 
+//  let favorite = Number(prompt("what's your favorite number "))
+//  if (favorite === 23){
+//     console.log("23 is cool number")
+//  }else if (favorite === 7){
+//     console.log("7 is also a cool number")
+//  }else{
+//     console.log("neither 23 nor 7")
+//  }
+// let letter = favorite * 12
+// console.log(letter)
+
+// let scoreDolphins = (96+108+89)/3
+// let scoreKoalas = (88 + 91 + 110)/3
+// console.log(scoreDolphins, scoreKoalas)
+
+// if(scoreDolphins > scoreKoalas ){
+//     console.log("Dolphins win the trophy")
+// }else if(scoreKoalas > scoreDolphins){
+//     console.log("Koalas win the trophy")
+// }else if(scoreDolphins === scoreKoalas){
+//     console.log("Both win the trophy")
+// }
+
+
+// const day = "monday"
+// switch(day){
+//     case "monday":
+//         console.log("plan course structure")
+//         console.log("go to coding meetup")
+//         break
+//     case "tuesday":
+//         console.log("Prepare theory videos")
+//         break
+//     case "wednesday":
+//     case "thursday":
+//         console.log("write code examples")
+//         break
+//     case "friday":
+//         console.log("Record videos")  
+//         break
+//     case "saturday":
+//     case "sunday":
+//         console.log("Enjoy the weekend")
+//         break
+//     default:
+//         console.log("not a valid day")      
+// }
+// const age = 15
+// age >= 18 ? console.log('i like to drink wine'): console.log('i like to drink water')
+// const bill = 275
+// const tip =bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2
+// console.log(`the bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
+
+// let hasDriversLicense  = false
+// let passTest = true
+
+
+// if (passTest) hasDriversLicense = true
+// if(hasDrivers) console.log("I can drive")
+
+// const interface = "audio"
+
+// function logger(){
+//     console.log("my name is Amal")
+// }
+// logger()
+
+// function fruitProcessor(apples, oranges){
+//    console.log(apples,oranges)
+//    const juice = `Juice with ${apples} apples and ${oranges} oranges.`
+//    return juice
+// }
+
+// let fruitJuice = fruitProcessor(5,0)
+// console.log(fruitJuice)
+
+// function calcAge1(birthYear){
+//     const age = 2022 - birthYear
+//     return age
+// }
+// const age1 = calcAge1(2000)
+// console.log(age1)
+
+// const calcAge2 = function (birthYear){
+//     return 2037-birthYear
+// }
+// const age2 = calcAge2 (1999)
+// console.log(age1,age2)
+
+// const calcAge3 = birthYear => 2037 - birthYear
+// const age3 = calcAge3 (1991)
+// console.log(age3)
+
+// const yearsUntilRetirement = (birthyear, firstName) =>{
+//     const age = 37
+//     const retirement = 65 - age
+//     // return retirement
+//     return`${firstName} retires in ${retirement} years`
+// }
+// console.log(yearsUntilRetirement(1991,"amal"))
+// function cutFruitPieces(fruit){
+//     return fruit * 4;
+// }
+// function fruitProcessor(apples, oranges){
+//     const applePieces = cutFruitPieces(apples)
+//     const orangePieces = cutFruitPieces(oranges)
+//        console.log(apples,oranges)
+//        const juice = `Juice with ${applePieces} piece of apples and ${orangePieces} pieces of oranges.`
+//         return juice
+//      }
+// console.log(fruitProcessor(5,4))
+
+// const calcAverage = (a,b,c) => (a + b + c)/3
+// console.log(calcAverage(3,4,5))
+
+// const scoreDolphins = calcAverage (44, 23, 71)
+// const scoreKoalas = calcAverage (65, 54, 49)
+// console.log(scoreDolphins,scoreKoalas)
+
+// const checkWinner = function(avgDolphins, avgkoalas){
+//  if(avgDolphins >= 2 * avgkoalas){
+//     console.log(`Dolphins win(${avgDolphins} vs. ${avgkoalas})`)
+//  }else if(avgkoalas >= 2 * avgDolphins){
+//     console.log(`Koalas win(${avgkoalas} vs. ${avgDolphins})`)
+
+//  }else{
+//     console.log('No team wins...')
+//  }
+// }
+// checkWinner (scoreDolphins,scoreKoalas)
+
+// const friends = ['micheal','steven','peter','elias','jackie','sagar']
+//  console.log(friends)
+
+// const years = new Array(191,98,86,89)
+// console.log(years)
+
+// console.log(friends[1])
+
+const calcAge = function (birthYear){
+    return 2037 - birthYear
+}
+const years = [1990,1967,2002,2010,2018]
+console.log(calcAge(years))
