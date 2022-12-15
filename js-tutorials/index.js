@@ -1,5 +1,5 @@
 // let count = 0
-// console.log (count) 
+// console.log (count)
 
 // let myAge = 35
 // console.log (myAge)
@@ -29,7 +29,6 @@
 //    console.log (bonusPoints)
 
 // document.getElementById("count-el").innerText=10
-
 
 // let text = "hello how are you"
 // console.log(text)
@@ -119,7 +118,6 @@
 // }
 // let age = 110
 
-
 // if (age < 100){
 //     console.log("Not elegible"
 // }else if (age === 100){
@@ -163,15 +161,12 @@
 //   let randomNumber = Math.floor( Math.random()*13 ) + 1
 //    if (randomNumber > 10){
 //     return 10
-//    }else if (randomNumber === 1){ 
+//    }else if (randomNumber === 1){
 //     return 11
 //    }else{
 //     return randomNumber
 //    }
 //  }
-
-
-
 
 // function startGame(){
 //     isAlive = true
@@ -181,7 +176,6 @@
 //      sum = firstcard + secondcard
 //     renderGame()
 // }
-
 
 // function renderGame(){
 //     cardEl.textContent = "cards: "
@@ -217,9 +211,6 @@
 // function primeNumber(){
 
 // }
-
-
-
 
 // let player1Time = 102
 // let player2Time = 107
@@ -259,7 +250,6 @@
 // let result = greatestNumber()
 // console.log (result)
 
-
 // function rollDice(){
 // let randomNumber = Math.floor(Math.random() * 6)+1
 // console.log(randomNumber)
@@ -288,7 +278,7 @@
 // console.log (result)
 
 // let Name = "Amal"
-// let Age = 21 
+// let Age = 21
 // let country = "India"
 
 // function logData(){
@@ -297,9 +287,8 @@
 // }
 // logData()
 
-
 // let person = {
-//     Name: "Amal",   
+//     Name: "Amal",
 //     age: 21,
 //     country: "india"
 // }
@@ -307,7 +296,6 @@
 //     console.log(person.Name + " is " + person.age + " years old and lives in " + person.country)
 // }
 // logData()
-
 
 // let age = 100
 
@@ -323,7 +311,7 @@
 //     console.log("senior citizen discount")
 // }
 
-// 
+//
 
 // function saveLead() {
 //     console.log("Button Clicked")
@@ -333,8 +321,6 @@
 // inputBtn.addEventListener("click", function(){
 //     console.log("button clicked from addEventlistner   ")
 // })
-
-
 
 // divEl = document.getElementById("div-el")
 
@@ -380,7 +366,6 @@
 
 // // console.log(prime())
 
-
 // let count = 0
 // for (count = 0 ; count < 11 ; count=count + 2){
 //     console.log(count)
@@ -397,7 +382,6 @@
 // let kmMileRatio = 0.621371
 //  let miles = km * kmMileRatio
 //  console.log(miles)
-
 
 // let a = 21
 // let b = 0
@@ -420,16 +404,16 @@
 //     console.log("hello " + name)
 // }
 // greet ("amal")
-// var changed = 0 
+// var changed = 0
 // function change (num){
 // return  (num +5)/3
 // }
-// changed =change(10) 
+// changed =change(10)
 
 // var processed = 0
 // function processArg (num){
-//     return (num + 3)/5    
-// } 
+//     return (num + 3)/5
+// }
 // processed = processArg(7)
 
 // function ourTrueOrFalse(isItTrue){
@@ -485,22 +469,22 @@
 //     }
 // return "Change Me"
 // }
-// console.log (golfScore(5,4)) 
+// console.log (golfScore(5,4))
 
 // function caseInSwitch(val){
 //     var answer = ""
 //     switch(val){
 //         case 1:
 //             answer = "alpha"
-//             break 
+//             break
 //         case 2:
-//             answer = "beta"  
+//             answer = "beta"
 //             break
 //         case 3:
-//             answer = "gamma"   
+//             answer = "gamma"
 //             break
 //         case 8:
-//             answer = "delta"   
+//             answer = "delta"
 //             break
 //     }
 //     return answer
@@ -533,10 +517,10 @@
 //        case 10:
 //        case "J":
 //        case "Q":
-//        case "K": 
+//        case "K":
 //        case "A":
 //         count --
-//         break   
+//         break
 //     }
 //     var holdbet = 'Hold'
 //     if (count > 0){
@@ -770,7 +754,7 @@
 // console.log(firstName + " " + lastName)
 
 // let x = 10 + 5
-// x += 10 
+// x += 10
 // let y = 8
 // console.log(x > y)
 
@@ -819,14 +803,13 @@
 // console.log(Number(inputYear)+18)
 // console.log(inputYear+ 18)
 
-
 // let money = 1
 
 // if (money){
 //     console.log("don't spend it all")
 // }else{
 //     console.log("you should get a job")
-// } 
+// }
 //  let favorite = Number(prompt("what's your favorite number "))
 //  if (favorite === 23){
 //     console.log("23 is cool number")
@@ -850,7 +833,6 @@
 //     console.log("Both win the trophy")
 // }
 
-
 // const day = "monday"
 // switch(day){
 //     case "monday":
@@ -865,14 +847,14 @@
 //         console.log("write code examples")
 //         break
 //     case "friday":
-//         console.log("Record videos")  
+//         console.log("Record videos")
 //         break
 //     case "saturday":
 //     case "sunday":
 //         console.log("Enjoy the weekend")
 //         break
 //     default:
-//         console.log("not a valid day")      
+//         console.log("not a valid day")
 // }
 // const age = 15
 // age >= 18 ? console.log('i like to drink wine'): console.log('i like to drink water')
@@ -882,7 +864,6 @@
 
 // let hasDriversLicense  = false
 // let passTest = true
-
 
 // if (passTest) hasDriversLicense = true
 // if(hasDrivers) console.log("I can drive")
@@ -970,10 +951,10 @@
 //     return 2037 - birthYear
 // }
 // const years = [1990,1967,2002,2010,2018]
-// console.log(calcAge(years)) 
+// console.log(calcAge(years))
 
 // const calcTip = function(bill){
-//     return bill >= 50 && bill <= 300 ? bill* 015 : bill * 0.2 
+//     return bill >= 50 && bill <= 300 ? bill* 015 : bill * 0.2
 // }
 // const bills = [125, 555, 44]
 // const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
@@ -994,7 +975,7 @@
 //     return 2037 - this.birthYear
 // }
 // }
-// console.log(jonas.calcAge())  
+// console.log(jonas.calcAge())
 
 // const Mark = {
 //     fullName : 'Mark Miller',
@@ -1087,25 +1068,33 @@
 //     if (dice === 6) console.log('Loop is about end..')
 // }
 
-const calcTip = function (bill){
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
-}
-const bills = [22,295,176,440,37,105,10,1100,86,52]
-const tips = []
-const totals = []
+// const calcTip = function (bill){
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+// }
+// const bills = [22,295,176,440,37,105,10,1100,86,52]
+// const tips = []
+// const totals = []
 
-for (let i =0; i <bills.length; i++){
-    const tip = calcTip(bills[i])
-    tips.push(tip)
-    totals.push(tip+bills[i])
-}
-console.log(bills, tips, totals)
-const calcAverage = function(arr){
-    let sum = 0
-    for (let i=0; i < arr.length; i++){
-        sum = sum + arr[i]
-    }
-    console.log(sum)
-    return sum /arr.length
-}
-console.log(calcAverage(2,3,7))
+// for (let i =0; i <bills.length; i++){
+//     const tip = calcTip(bills[i])
+//     tips.push(tip)
+//     totals.push(tip+bills[i])
+// }
+// console.log(bills, tips, totals)
+// const calcAverage = function(arr){
+//     let sum = 0
+//     for (let i=0; i < arr.length; i++){
+//         sum = sum + arr[i]
+//     }
+//     console.log(sum)
+//     return sum /arr.length
+// }
+// console.log(calcAverage(2,3,7))
+
+// "use strict";
+// const x = 23;
+// if (x === 23) console.log(23);
+
+// const calcAge = (birthYear) => 2037 - birthYear
+// console.log();
+console.log("hello")
