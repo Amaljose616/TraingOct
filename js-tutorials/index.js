@@ -966,8 +966,146 @@
 
 // console.log(friends[1])
 
-const calcAge = function (birthYear){
-    return 2037 - birthYear
+// const calcAge = function (birthYear){
+//     return 2037 - birthYear
+// }
+// const years = [1990,1967,2002,2010,2018]
+// console.log(calcAge(years)) 
+
+// const calcTip = function(bill){
+//     return bill >= 50 && bill <= 300 ? bill* 015 : bill * 0.2 
+// }
+// const bills = [125, 555, 44]
+// const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+// console.log(bills,tip)
+
+// const jonas = {
+//     firstName : "jonas",
+//     lastName : "jhonny",
+//     birthYear : 1991,
+//     job : "teacher",
+//     friends : ["Michael","Peter","Steven"],
+//    hasDrversLicense : true,
+// //    calcAge: function (birthYear){
+// //     return 2037 - birthYear;
+// //    }
+// calcAge: function(){
+//     console.log(this)
+//     return 2037 - this.birthYear
+// }
+// }
+// console.log(jonas.calcAge())  
+
+// const Mark = {
+//     fullName : 'Mark Miller',
+//     mass : 78,
+//     height :1.69,
+//     calcBMI: function(){
+//         return Mark.mass/ Mark.height **2
+//     }
+// }
+// const john ={
+//     fullName : "John Smith",
+//     mass : 92 ,
+//     height:1.95,
+//     calcBMI: function(){
+//         return john.mass/ john.height **2
+//     }
+// }
+// if(john.calcBMI() > Mark.calcBMI()){
+// console.log(`${john.fullName}'s BMI ${john.calcBMI()} is higher than ${Mark.fullName}'s ${Mark.calcBMI()} `)
+// }else{
+// console.log(`${john.fullName}'s BMI ${john.calcBMI()} is lesser than ${Mark.fullName}'s ${Mark.calcBMI()} `)
+
+// }
+
+// const Amal = {
+//     fullName : "Amal Jose",
+//     age : 22,
+//     height :1.72,
+//     mass :61,
+//     calcBMI: function (){
+//         return this.mass/this.height **2
+//     }
+// }
+// console.log(`${Amal.fullName}`)
+// console.log(Amal.calcBMI())
+// let x
+// for (let i=1 ; i <11 ; i ++){
+//  x = "Lifting weights i"
+//  console.log(x)
+// }
+
+// for(let rep = 1;rep <= 10 ; rep ++){
+//     console.log(`lifting weights repetitions ${rep} `)
+// }
+
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 -1991,
+//     'teacher',
+//     ['michael','Peter','steven']
+
+// ]
+// for(let i = 0;i < jonasArray.length; i++){
+//     console.log(jonasArray[i]);
+// }
+// console.log(jonasArray[4][1])
+
+// const years = [1991,1998,1999,2001,2000]
+// const age = []
+// for (let i=0 ; i < years.length ; i++){
+//     age.unshift(2022 - years[i])
+// }
+// console.log(age)
+
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 -1991,
+//     'teacher',
+//     ['michael','Peter','steven']
+// ]
+
+// for(let i = jonasArray.length - 1 ; i >= 0 ; i-- ){
+//      console.log(jonasArray[i]);
+// }
+
+// let rep = 11
+// while (rep <= 10){
+//     console.log(`Lifting weights repetitions ${rep}`)
+//     rep++
+// }
+
+// let dice = Math.trunc(Math.random()*6)+1
+// console.log(dice)
+
+// while(dice !== 6){
+//     console.log(`you rolled a ${dice}`)
+//     dice = Math.trunc(Math.random()*6)+1
+//     if (dice === 6) console.log('Loop is about end..')
+// }
+
+const calcTip = function (bill){
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
 }
-const years = [1990,1967,2002,2010,2018]
-console.log(calcAge(years))
+const bills = [22,295,176,440,37,105,10,1100,86,52]
+const tips = []
+const totals = []
+
+for (let i =0; i <bills.length; i++){
+    const tip = calcTip(bills[i])
+    tips.push(tip)
+    totals.push(tip+bills[i])
+}
+console.log(bills, tips, totals)
+const calcAverage = function(arr){
+    let sum = 0
+    for (let i=0; i < arr.length; i++){
+        sum = sum + arr[i]
+    }
+    console.log(sum)
+    return sum /arr.length
+}
+console.log(calcAverage(2,3,7))
