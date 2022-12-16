@@ -1097,4 +1097,146 @@
 
 // const calcAge = (birthYear) => 2037 - birthYear
 // console.log();
-console.log("hello")
+// console.log("hello")
+
+// 'use strict'
+
+// const tempratures = [3,-2,-6,-1,,9,13,17,15,14,9,5]
+
+//   const calcTempAmplitude = function (temps){
+//     let max = temps[0]
+//     let min = temps[0]
+//     for(let i = 0;i < temps.length;i++){
+
+//         const curTemp = temps[i]
+//         if(typeof curTemp != 'number')continue
+//         if(temps[i]>max) max =temps[i]
+//         if (temps[i]< min ) min = temps[i]
+//     }
+//     console.log(max,min)
+//     return max-min
+//   };
+//   calcTempAmplitude([3,7,4,23])
+//   const amplitude = calcTempAmplitude(tempratures)
+//   console.log(amplitude)
+//   console.log(Math.max(...tempratures)
+
+// const array1 = ['a','b','c']
+// const array2 = ['d','e','f']
+// const array3 = array1.concat(array2)
+// console.log(array3)
+
+// const tempratures = [3,-2,-6,-1,,9,13,17,15,14,9,5]
+
+//   const calcTempAmplitudeNew = function (t1 , t2){
+//     const array1 = ['a','b','c']
+//     const array2 = ['d','e','f']
+//     const array3 = array1.concat(array2)
+//     const temps =t1.concat(t2)
+//     console.log(temps)
+//     let max = temps[0]
+//     let min = temps[0]
+//     for(let i = 0;i < temps.length;i++){
+
+//         const curTemp = temps[i]
+//         if(typeof curTemp != 'number')continue
+//         if(temps[i]>max) max =temps[i]
+//         if (temps[i]< min ) min = temps[i]
+//     }
+//     console.log(max,min)
+//     return max-min
+//   };
+//   calcTempAmplitudeNew([3,7,4,23])
+//   const amplitudeNew = calcTempAmplitudeNew([3,5,1],[9,0,5])
+//   console.log(amplitudeNew)
+//   console.log(Math.max(...tempratures)
+
+// const measureKelvin = function(){
+//     const measurement = {
+//         type:'temp',
+//         unit:'celsius',
+//         value:Number(prompt('Degree celsius')),
+//     };
+//     const kelvin = measurement.value + 273
+//     return kelvin
+// };
+// console.log(measureKelvin());
+
+// const day = "monday"
+// switch(day){
+//     case "monday":
+//         console.log("plan course structure")
+//         console.log("go to coding meetup")
+//         break
+//     case "tuesday":
+//         console.log("Prepare theory videos")
+//         break
+//     case "wednesday":
+//     case "thursday":
+//         console.log("write code examples")
+//         break
+//     case "friday":
+//         console.log("Record videos")
+//         break
+//     case "saturday":
+//     case "sunday":
+//         console.log("Enjoy the weekend")
+//         break
+//     default:
+//         console.log("not a valid day")
+// }
+
+// const data1 =[17,21,23]
+// const data2 =[12,5,-5,0,4]
+// console.log(`${data1[0]}°C...${data1[1]}°C ... ${data1[2]}°C ...`)
+
+// const printForcast = function(arr){
+//     let str =''
+//     for(let i=0 ; i < arr.length; i++){
+//     str +=`${arr[i]}°C in ${i+1} days ... `
+//     }
+//     console.log('...' + str)
+// }
+// printForcast(data1)
+
+'use strict';
+
+// console.log(document.querySelector('.message').textContent);
+// document.querySelector('.message').textContent = 'Correct Number';
+
+// document.querySelector('.number').textContent = 13;
+// document.querySelector('.score').textContent = 20;
+// document.querySelector('.guess').value = 23;
+// console.log(document.querySelector('.guess').value);
+const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let score = 20;
+document.querySelector('.number').textContent = secretNumber;
+
+document.querySelector('.check').addEventListener('click', function () {
+  //   console.log(document.querySelector('.guess').value);
+  //   document.querySelector('.message').textContent = 'Correct Number';
+
+  const guess = Number(document.querySelector('.guess').value);
+  console.log(guess);
+
+  if (!guess) {
+    document.querySelector('.message').textContent = 'No number!';
+  } else if (guess === secretNumber) {
+    document.querySelector('.message').textContent = 'Correct Number!';
+
+    document.querySelector('body').style.backgroundColor = '#60b347';
+  } else if (guess > secretNumber) {
+    if (score > 1) {
+      document.querySelector('.message').textContent = 'Too high';
+      score--;
+      document.querySelector('.score').textContent = score;
+    } else {
+      document.querySelector('.message').textContent = 'You lose the game!';
+      document.querySelector('.score').textContent = 0;
+    }
+  } else if (guess < secretNumber) {
+    document.querySelector('.message').textContent = 'Too Low';
+    score--;
+    document.querySelector('.score').textContent = 0;
+  }
+});

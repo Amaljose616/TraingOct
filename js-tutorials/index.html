@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>  -->
-        <!-- <div class="back">
+<!-- <div class="back">
             <h1>People entered:</h1>
             <h2 id="count-el">0</h2>
             <button id="increment-btn" onclick="increment()" >INCREMENT</button>
@@ -12,13 +12,13 @@
             <p id="welcome-el">hello</p>
             <p id="save-el">Previous entries: </p>
         </div> -->
-        <!-- <div class="img">
+<!-- <div class="img">
             <img src="https://static.wixstatic.com/media/3cd70c_ab43e4ccd93840eca0e4c7219684a0ea~mv2.jpg/v1/fill/w_500,h_667,al_c,lg_1,q_85/3cd70c_ab43e4ccd93840eca0e4c7219684a0ea~mv2.webp" alt="">
         </div>
     <button id="price-btn" onclick="error()">price $231</button>
         <p id="price-el"></p>
      -->
-     <!-- <span id="num1-el"></span>
+<!-- <span id="num1-el"></span>
      <span id="num2-el"></span>
      <br>
      <button id="add-el" onclick="add()" >Add</button>
@@ -29,18 +29,18 @@
      <br>
      <span id="sum-el">result :</span> -->
 
-     <!-- <div class="game">
+<!-- <div class="game">
         <h2>Blackjack</h2>
         <h3 id="message-el">Want to play  round?</h3>
         <p id="card-el">Cards:</p>
         <p id="sum-txt">Sum:</p>
         <p id="greeting-el"></p> -->
-        <!-- <button onclick="startGame()">START GAME</button>
+<!-- <button onclick="startGame()">START GAME</button>
         <button onclick="newCard()">NEW CARD</button>
         <p id="player-el"></p>
      </div> -->
 
-     <!-- <input type="text" id="input-el">
+<!-- <input type="text" id="input-el">
      <button id="input-btn" onclick="">SAVE INPUT</button>
      <div id="div-el"></div>
      <p id="result-el"></p>
@@ -51,7 +51,7 @@
     </body >
 </html> -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -66,4 +66,37 @@
         
     </script>
 </body>
-</html> 
+</html>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again">Again!</button>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing ...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🏅 Highscore! <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
