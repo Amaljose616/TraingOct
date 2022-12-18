@@ -1280,11 +1280,22 @@ for (let i = 0; i < btnsOpenModal.length; i++)
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
   });
+
+  const closeModal = function(){
+    modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+  }
+  btnCloseModal.addEventListener('click', closeModal) 
+  overlay.addEventListener('click', closeModal)
+
+  document.addEventListener('keydown', function(){
+    console.log("A key was pressed")
+  })
 btnCloseModal.addEventListener('click', function () {
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
-});
-overlay.addEventListener('click', function () {
-  modal.classList.add('hidden');
-  overlay.classList.add('hidden');
-});
+// });
+// overlay.addEventListener('click', function () {
+//   modal.classList.add('hidden');
+//   overlay.classList.add('hidden');
+// });
