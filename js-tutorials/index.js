@@ -1309,30 +1309,325 @@
 //   console.log('A key was pressed');
 // });
 // selecting elements
-const score0El = document.querySelector('#score--0');
-const score1El = document.getElementById('score--1');
-const diceEl = document.querySelector('.dice');
-const btnNew = document.querySelector('.btn--new');
-const btnRoll = document.querySelector('.btn--roll');
-const btnHold = document.querySelector('.btn--hold');
-const current0El = document.getElementById('current--0');
-const current1El = document.getElementById('current--1');
-// Starting conditions
-score0El.textContent = 0;
-score1El.textContent = 0;
-diceEl.classList.add('hidden');
+// const player0El = document.querySelector('.player--0');
+// const player1El = document.querySelector('.player--1');
+// const score0El = document.querySelector('#score--0');
+// const score1El = document.getElementById('score--1');
+// const diceEl = document.querySelector('.dice');
+// const btnNew = document.querySelector('.btn--new');
+// const btnRoll = document.querySelector('.btn--roll');
+// const btnHold = document.querySelector('.btn--hold');
+// const current0El = document.getElementById('current--0');
+// const current1El = document.getElementById('current--1');
+// // Starting conditions
+// score0El.textContent = 0;
+// score1El.textContent = 0;
 
-let currentScore = 0;
-// Rolling dice functionality
-btnRoll.addEventListener('click', function () {
-  const dice = Math.trunc(Math.random() * 6) + 1;
-  console.log(dice);
-  diceEl.classList.remove('hidden');
-  diceEl.src = `dice-${dice}.png`;
+// let scores, currentScore, activePlayer, playing;
 
-  if (dice !== 1) {
-    currentScore += dice;
-    current0El.textContent = currentScore;
-  } else {
-  }
-});
+// const init = function () {
+//   scores = [0, 0];
+//   currentScore = 0;
+//   activePlayer = 0;
+//   playing = true;
+
+//   score0El.textContent = 0;
+//   score1El.textContent = 0;
+//   current0El.textContent = 0;
+//   current1El.textContent = 0;
+
+//   diceEl.classList.add('hidden');
+//   player0El.classList.remove('player--winner');
+//   player1El.classList.remove('player--winner');
+//   player0El.classList.add('player--active');
+//   player1El.classList.remove('player--active');
+// };
+// init();
+
+// const switchPlayer = function () {
+//   document.getElementById(`current--${activePlayer}`).textContent = 0;
+//   currentScore = 0;
+//   activePlayer = activePlayer == 0 ? 1 : 0;
+//   player0El.classList.toggle('player--active');
+//   player1El.classList.toggle('player--active');
+// };
+
+// // Rolling dice functionality
+// btnRoll.addEventListener('click', function () {
+//   if (playing) {
+//     const dice = Math.trunc(Math.random() * 6) + 1;
+//     console.log(dice);
+//     diceEl.classList.remove('hidden');
+//     diceEl.src = `dice-${dice}.png`;
+
+//     if (dice !== 1) {
+//       currentScore += dice;
+//       document.getElementById(`current--${activePlayer}`).textContent =
+//         currentScore;
+//       current0El.textContent = currentScore;
+//     } else {
+//       switchPlayer();
+//     }
+//   }
+// });
+// btnHold.addEventListener('click', function () {
+//   if (playing) {
+//     scores[activePlayer] += currentScore;
+//     document.getElementById(`score--${activePlayer}`).textContent =
+//       scores[activePlayer];
+//     if (scores[activePlayer] >= 20) {
+//       playing = false;
+//       document
+//         .querySelector(`.player--${activePlayer}`)
+//         .classList.add('player--winner');
+//       document
+//         .querySelector(`.player--${activePlayer}`)
+//         .classList.remove('player--ative');
+//     } else {
+//       switchPlayer();
+//     }
+//   }
+// });
+
+// btnNew.addEventListener('click', init());
+
+// let n = 5;
+
+// if ((n = 5)) {
+//   let amal = 35;
+//   console.log(amal);
+// } else {
+//   let achi = 25;
+//   console.log(achi);
+// }
+
+// console.log(amal);
+
+// const myName = 'jonas';
+
+// function first() {
+//   const age = 30;
+
+//   if (age >= 30) {
+//     const decade = 3;
+//     var millenial = true;
+//   }
+
+//   function second() {
+//     const job = 'Teacher';
+//     console.log(`${myName} is a ${age}-old ${job}`);
+//   }
+//   second();
+// }
+// first();
+
+// const a = 'jonas';
+// first();
+
+// function first() {
+//   const b = 'hello!';
+//   second();
+
+//   function second() {
+//     const c = 'Hi!';
+//     third();
+//   }
+// }
+// function third() {
+//   const d = 'Hey!';
+//   console.log(d + c + b + a);
+// }
+
+'use strict';
+
+// function calcAge(birthYear) {
+//   const age = 2037 - birthYear;
+//   function printAge() {
+//     const output = `${firstName},you are ${age}, born in ${birthYear}`;
+//     console.log(output);
+//     if (birthYear >= 1981 && birthYear <= 1996) {
+//       var millenial = true;
+//       const firstName = 'steven';
+//       const str = `oh, and you're a millenial, ${firstName}`;
+//       console.log(str);
+//       function add(a, b) {
+//         return a + b;
+//       }
+//     }
+//     console.log(millenial);
+//   }
+//   printAge();
+//   return age;
+// }
+// const firstName = 'jonas';
+// calcAge(1991);
+
+// const myName = 'jonas';
+
+// if (myName === 'jonas') {
+//   console.log(`jonas is a ${job}`);
+//   const age = 2037 - 1989;
+//   console.log(age);
+//   const job = `teacher`;
+//   console.log(x);
+// }
+
+//
+
+// console.log(addDec1(5, 8));
+// console.log(addExpr(5, 8));
+// console.log(addArrow(5, 8));
+
+// function addDec1(a, b) {
+//   return a + b;
+// }
+// const addExpr = function (a, b) {
+//   return a + b;
+// };
+// const addArrow = (a, b) => a + b;
+// if (!numProducts) deleteShoppingCart();
+// var numProducts = 10;
+// function deleteShoppingCart() {
+//   console.log(`All products deleted!`);
+// }
+
+// var x =1
+// let y = 2
+// const z = 3
+
+// console.log(x === window.x)
+
+// console.log(this);
+
+// console.log(this);
+
+// const calcAge = function (birthYear) {
+//   console.log(2037 - birthYear);
+//   console.log(this);
+// };
+// calcAge(1991);
+
+// const calcAgeArrow = birthYear => {
+//   console.log(2037 - birthYear);
+//   console.log(this);
+// };
+// calcAgeArrow(1980);
+
+// const jonas = {
+//   year: 1991, calcAge: function(){
+//     console.log(this)
+//     console.log(2037-this.year)
+//   }
+// }
+// jonas.calcAge()
+
+// const matiilda = {
+//   year: 2017
+// }
+
+// matiilda.calcAge = jonas.calcAge
+// matiilda.calcAge()
+
+// const f = jonas.calcAge
+
+// f();
+// var firstName = 'Matilda'
+// const jonas = {
+//   firstname: 'jonas',
+//   year: 1991,
+//   calcAge: function(){
+// console.log(this)
+// console.log(2037-this.year)
+//  const self = this
+//   const isMillenial =  function(){
+//     console.log(self)
+//     console.log(self.year >=  1981 && this.year <= 1996)
+//     // console.log(this.year >=  1981 && this.year <= 1996)
+//   }
+//     const isMillenial = () => {
+//       console.log(this)
+//       console.log(this.year >= 1981 && this.YEAR <= 1996)
+//     }
+//       isMillenial()
+//     },
+//     greet: () => {
+//       console.log(this);
+//     console.log(`hey ${this.firstName}`);
+//   },
+// }
+//   jonas.greet()
+//   jonas.calcAge()
+
+//   const addExpr = function(a,b){
+//     console.log(arguments)
+//     return a + b
+//   }
+//   addExpr(2,3)
+//   var addArrow = (a,b) => a + b
+
+// let age = 30;
+// let oldAge = age;
+// age = 31;
+// console.log(age);
+// console.log(oldAge);
+
+// const me = {
+//   name: 'jonas',
+//   age: 30,
+// };
+// const friend = me;
+// friend.age = 27;
+// console.log('Friend:', friend);
+// console.log('Me', me);
+
+// let lastName = 'williams';
+// let oldLastName = lastName;
+// lastName = 'Davis';
+// console.log(lastName, oldLastName);
+
+// const jessica = {
+//   firstName: 'Jessica',
+//   lastName: 'williams',
+//   age: 27,
+// };
+// const marriedJessica = jessica;
+// marriedJessica.lastName = 'Davis';
+// console.log('Before marriage:', jessica);
+// console.log('After marriage:', marriedJessica);
+
+// const jessica2 = {
+//   firstName : 'Jessica',
+//   lastName : 'Williams',
+//   age : 27,
+//   family:['Alice',`Bob`]
+// }
+// const jessicaCopy =Object.assign({},jessica2)
+// jessicaCopy.lastName = `Davis`
+
+// jessicaCopy.family.push(`mary`)
+// jessicaCopy.family.push(`John`)
+
+// console.log(`Before marriage:`,jessica2)
+// console.log(`After marriage:`,jessicaCopy)
+
+//SLACK-------------------------
+
+'use strict';
+
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  startMenu: ['Focaccia', 'Bruscchetta', 'Garlic Bread', 'Caprese salad'],
+  mainmenu: ['pizza', 'Pasta', 'Risotto'],
+};
+const arr = [2, 3, 4];
+const a = arr[0];
+const b = arr[1];
+const c = arr[2];
+
+const [x, y, z] = arr;
+console.log(x, y, z);
+
+const [first, second] = restaurant.categories;
+console.log(first, second);
