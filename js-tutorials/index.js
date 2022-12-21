@@ -2316,25 +2316,72 @@
 // newPassport(amal)
 // checkIn(flight,amal)
 
-const oneWord = function (str) {
-  return str.replace(/ /g, '').toLowerCase();
+// const oneWord = function (str) {
+//   return str.replace(/ /g, '').toLowerCase();
+// };
+
+// const upperFirstWord = function (str) {
+//   const [first, ...others] = str.split(' ');
+//   return [first.toUpperCase(), ...others].join(' ');
+// };
+
+// const transformer = function (str, fn) {
+//   console.log(`Original string:${str}`);
+//   console.log(`Transformed string:${fn(str)}`);
+//   console.log(`Transformed by: ${fn.name}`);
+// };
+
+// transformer('JavaScript is the best!', upperFirstWord);
+
+// transformer('JavaScript is the best!', oneWord);
+
+// const high5 = function () {
+//   console.log('👋');
+// };
+// document.body.addEventListener('click', high5);
+
+// ['Jonas','Martha','Adam'].forEach(high5)
+
+// const greet = function (greeting) {
+//   return function (name) {
+//     console.log(`${greeting} ${name}`);
+//   };
+// };
+// const greeterHey = greet('Hey');
+// greeterHey('Jonas');
+// greeterHey('Steven');
+
+// greet('hello')('jonas')
+
+// const greetArr = greeting => name => console.log(`${greeting}${name}`)
+
+// greetArr('hi')('jonas')
+
+const lufthansa = {
+  airline: 'Lufthansa',
+  iataCode: 'LH',
+  bookings: [],
+
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
+  },
+};
+lufthansa.book(239, 'Amal Jose');
+console.log(lufthansa);
+
+const eurowings = {
+  name: 'Eurowings',
+  iataCode: 'EW',
+  booking: [],
 };
 
-const upperFirstWord = function (str) {
-  const [first, ...others] = str.split(' ');
-  return [first.toUpperCase(), ...others].join(' ');
-};
+const book = lufthansa.book;
 
-const transformer = function (str, fn) {
-  console.log(`Original string:${str}`);
-  console.log(`Transformed string:${fn(str)}`);
-  console.log(`Transformed by: ${fn.name}`);
-};
-transformer('JavaScript is the best!', upperFirstWord);
+book.call(eurowings, 23, 'aachi');
+console.log(eurowings);
 
-transformer('JavaScript is the best!', oneWord);
-
-const high5 = function () {
-  console.log('👋');
-};
-document.body.addEventListener('click', high5);
+book.call(lufthansa, 239, 'amal');
+console.log(lufthansa);
