@@ -2102,20 +2102,239 @@
 //   console.log(`[${half} HALF] ${min}:${event}`);
 // }
 
-const airline = 'TAP Air Portugal';
-const plane = 'A320';
+// const airline = 'TAP Air Portugal';
+// const plane = 'A320';
 
-console.log(plane[0]);
-console.log(plane[1]);
-console.log(plane[3]);
-console.log('B737'.length);
+// console.log(plane[0]);
+// console.log(plane[1]);
+// console.log(plane[3]);
+// console.log('B737'.length);
 
-console.log(airline.indexOf('r'));
+// console.log(airline.indexOf('r'));
 
-console.log(airline.lastIndexOf('r'));
+// console.log(airline.lastIndexOf('r'));
 
-console.log(airline.slice(4));
-console.log(airline.slice(4, 7));
+// console.log(airline.slice(4));
+// console.log(airline.slice(4, 7));
 
-console.log(airline.slice(0, airline.indexOf(' ')));
-console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+// console.log(airline.slice(0, airline.indexOf(' ')));
+// console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+
+// console.log(airline.slice(-2));
+// console.log(airline.slice(1,-1));
+
+// const checkMiddleSeat = function(seat){
+//  const s =seat.slice(-1)
+//  if (s === 'B' || s ==='E'){
+//   console.log('You got the middle seat')
+//  }else{
+//   console.log('you got lucky')
+//  }
+// }
+// checkMiddleSeat('11B')
+// checkMiddleSeat('23C')
+// checkMiddleSeat('3E')
+
+// console.log(new String('jonas'))
+
+// const airline = 'TAP Air Portugal';
+
+// console.log(airline.toLowerCase());
+// console.log(airline.toUpperCase());
+
+// const passenger = 'jonAs';
+// const passengerLower = passenger.toLowerCase();
+// const passengerCorrect = passenger[0].toUpperCase() + passengerLower.slice(1);
+// console.log(passengerCorrect);
+
+// const email = 'hello@gmail.com';
+// const loginEmail = ' Hello@Gmail.Com \n';
+
+// const lowerEmail = loginEmail.toLowerCase();
+// const trimmedEmail = lowerEmail.trim();
+// console.log(lowerEmail);
+// console.log(trimmedEmail);
+
+// const normalizedEmail = loginEmail.toLocaleLowerCase().trim();
+// console.log(normalizedEmail);
+// console.log(email === normalizedEmail);
+
+// const priceGB = '288,97$';
+// const priceUS = priceGB.replace('$', '&').replace(',', '.');
+// console.log(priceUS);
+
+// const announcement =
+//   'All passengers come to boarding door 23.Boarding  door 23!';
+// console.log(announcement.replace('door', 'gate'));
+// console.log(announcement.replaceAll('door', 'gate'));
+
+// console.log(announcement.replace(/door/g, 'gate'));
+
+// const plane = 'Air A320neo';
+// console.log(plane.includes('A320'));
+// console.log(plane.includes('boeing'));
+// console.log(plane.includes('Air'));
+
+// if (plane.startsWith('Air') && plane.endsWith('neo')) {
+//   console.log('Part of the NEW AIRbus family');
+// }
+
+// const checkBaggage = function(items){
+//   const baggage = items.toLowerCase()
+//   if((baggage.includes('Knife'))||(baggage.includes('gun'))){
+//     console.log('You are NOT allowed on board')
+//   }else{
+//     console.log('Welcome aboard!')
+//   }
+// }
+// checkBaggage('I have a laptop,some Food and  a pocket Knife')
+// checkBaggage('Socks and camera')
+// checkBaggage('Got some snacks and a gun for protection')
+
+// console.log('a+very+nice+string'.split('+'));
+// console.log('Amal jose'.split(' '));
+
+// const [firstName, lastName] = 'Amal jose'.split(' ');
+
+// const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
+// console.log(newName);
+
+// const capitalizeName = function (name) {
+//   const names = name.split(' ');
+//   const namesUpper = [];
+
+//   for (const n of names) {
+//     // namesUpper.push(n[0].toUpperCase() + n.slice(1));
+//     namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+//   }
+//   console.log(namesUpper.join(' '));
+// };
+// capitalizeName('jessica and smith davis');
+// capitalizeName('amal jose');
+
+// const message = 'Go to gate 23!';
+// console.log(message.padStart(25, '.').padEnd(30, '+'));
+// console.log('jonas'.padStart(23, '+'));
+
+// const maskCreditCard = function (number) {
+//   const str = number + '';
+//   const last = str.slice(-4);
+//   return last.padStart(str.length, '*');
+// };
+// console.log(maskCreditCard(45674565434565489));
+// console.log(maskCreditCard(23456789876543));
+
+// const message2 = 'Bad weather... All Departues Delayed...'
+// console.log(message2.repeat(5))
+
+// const planesInline = function(n){
+//   console.log(`There are ${n} planes in line ${'*'.repeat(n)}`)
+// }
+// planesInline(5)
+// planesInline(3)
+// planesInline(12)
+
+// document.body.append(document.createElement('textarea'));
+// document.body.append(document.createElement('button'));
+
+// document.querySelector('button').addEventListener('click', function () {
+//   const text = document.querySelector('textarea').value;
+//   const rows = text.split('\n');
+//   console.log(rows);
+
+//   for (const row in rows.entries){
+//    const  [first,second] = row.toLowerCase().trim().split('_')
+//    console.log(row,first,second)
+//   const output = `${first}${second.replace(second[0],second[0].toUpperCase)}`
+//   console.log(output)
+//   }
+// });
+// console.log(`${output.padEnd(20)}`)
+
+// const flights =
+//   '_Delayed _Departure;fao93766109;txtl2133758440;11:25 +_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel74392998';
+
+// console.log(flights.split('+'));
+
+// for (const flight of flights.split('+')) {
+//   console.log(flights);
+// }
+// const [] flight.slplit(';')
+// const output = `${type.replaceAll('_','')} ${from} ${to} (${time})`
+// console.log(output)
+
+'use strict';
+
+// const bookings = [];
+
+// const createBooking = function (flightNum, numPassengers, price) {
+//   numPassengers = numPassengers || 1;
+//   price = price || 199;
+
+//   const booking = {
+//     flightNum,
+//     numPassengers,
+//     price,
+//   };
+//   console.log(booking);
+//   bookings.push(booking);
+// };
+
+// createBooking('LH123');
+// createBooking('LH1234', 120, 8000);
+// createBooking('LH123', 5);
+
+// const flight = 'LH234';
+// const amal = {
+//   name: 'Amal Jose',
+//   passport: 2345678,
+// };
+
+// const checkIn = function (flightNum, passanger) {
+//   flightNum = 'LH999';
+//   passanger.name = 'Mr.' + passanger.name;
+
+//   if (passanger.passport === 2345678) {
+//     alert('Check in');
+//   } else {
+//     alert('wrong passport!');
+//   }
+// };
+// checkIn(flight, amal);
+
+// console.log(flight)
+// console.log(amal)
+
+// // flightNum = flight
+// const flightNum = flight
+// const passanger =  amal
+
+// const newPassport = function (person){
+//   person.passport = Math.trunc(Math.random() * 10000000000)
+// }
+// // const  = new type(arguments);
+// newPassport(amal)
+// checkIn(flight,amal)
+
+const oneWord = function (str) {
+  return str.replace(/ /g, '').toLowerCase();
+};
+
+const upperFirstWord = function (str) {
+  const [first, ...others] = str.split(' ');
+  return [first.toUpperCase(), ...others].join(' ');
+};
+
+const transformer = function (str, fn) {
+  console.log(`Original string:${str}`);
+  console.log(`Transformed string:${fn(str)}`);
+  console.log(`Transformed by: ${fn.name}`);
+};
+transformer('JavaScript is the best!', upperFirstWord);
+
+transformer('JavaScript is the best!', oneWord);
+
+const high5 = function () {
+  console.log('👋');
+};
+document.body.addEventListener('click', high5);
