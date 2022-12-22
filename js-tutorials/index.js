@@ -2965,3 +2965,19 @@ btnClose.addEventListener('click', function (e) {
 
 console.log(movements);
 console.log(movements.includes(-130));
+
+if(amount>0 && currentAmount.movements.some(mov => >= amount * 0.1)){
+  currentAccount.movements.push(amount)
+
+  updateUI(currentAccount)
+}
+
+const anyDeposits = movements.some(mov => mov > 5000)
+
+console.log(anyDeposits)
+
+console.log(movements.every(mov = > mov > 0))
+
+const deposit = mov => mov > 0
+console.log(movements.some(deposit))
+console.log
