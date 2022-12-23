@@ -2983,9 +2983,112 @@
 // console.log(movements.every(deposit))
 // console.log(movements.filter(deposit))
 
-const arr = [[1, 2, 3], [4, 5, 6], 7, 8];
-console.log(arr.flat());
+// const arr = [[1, 2, 3], [4, 5, 6], 7, 8];
+// console.log(arr.flat());
 
-const arrDeep = [[[1, 2], 3], [4, 5, 6], 7, 8];
-console.log(arrDeep.flat());
-console.log(arrDeep.flat(2));
+// const arrDeep = [[[1, 2], 3], [4, 5, 6], 7, 8];
+// console.log(arrDeep.flat());
+// console.log(arrDeep.flat(2));
+
+// const accountsMovements = accounts.map(acc => acc.movements)
+
+// const allMovements = accountMovements.flat();
+// console.log(allMovements)
+// const overalBalance = allMovements.reduce((accc,mov) => acc + mov, 0)
+// console.log(overalBalance)
+
+// const overalBalance = accounts.map(acc => acc.movements).flat().reduce(acc, mov) => acc + mov,0;
+// console.log(overalBalance)
+
+// const owners = ['Jonas','Zach','Adam','Martha']
+// console.log(owners.sort())
+
+// console.log(movements)
+// movements.sort((a,b) => {
+//   if(a > b)
+//   return 1;
+//   if(b > a) return -1
+// })
+
+// movements.sort((a, b) => a -b)
+// console.log(movements)
+// const movs = sort ? movements.slice().sort(a , b) => a-b)
+
+// const arr = [1, 2, 3, 4, 5, 6, 7];
+// console.log(new Array(1, 2, 3, 4, 5, 6, 7));
+
+// // ----SLACK------
+
+// const x = new Array(7);
+// console.log(x);
+
+// // console.log(x.map(()=> 5))
+
+// x.fill(5);
+// console.log(x);
+
+// arr.fill(23, 4, 6);
+// console.log(arr);
+
+// Array.from({length: 7},() => 1)
+// console.log(y)
+
+// const z = Array.from({length: 7},(cur,i) => i + 1)
+// console.log(z)
+
+// console.log(movementsUI.map(el => Number(el.textContent.replace(''))))
+
+// const bankDepositSum = accounts.flatMap(acc.movements).filter(mov => mov > 0).reduce((sum, cur) => sum + cur, 0);
+
+// console.log(bankDepositSum);
+
+// // const numDeposits1000 = account.flatMap(acc => acc.movements)
+// console.log(numDeposits1000)
+
+// const numDeposits1000 = accounts.flatMap(acc => acc.movements).reduce((count,cur) => (cur >= 1000 ? count + 1 :count ), 0)
+
+// const {deposits, withdrawals} = accounts
+// .flatMap(acc => acc.movements).reduce((sums, cur) => {
+// // cur > 0 ? sums.deposits += cur : sums.withdrawals += cur;
+// sums[cur > 0 ? 'deposits' : 'withdrawals'] += cur
+// return sums
+// },{deposits:0, withdrawals:0})
+
+// console.log()
+
+// const arr = [8, 6, 1, 3, 4, 5, 2, 8, 9];
+
+// const sorted = arr.filter(i => i < 6).sort();
+// console.log(sorted);
+
+// const convertTitleCase = function (title) {
+//   const expections = ['a', 'an', 'the', 'but', 'or', 'on', 'in', 'with'];
+
+//   const titleCase = title
+//     .toLowerCase()
+//     .split(' ')
+//     .map(word =>
+//       expections.includes(word) ? word : word[0].toUpperCase() + word.slice(1)
+//     );
+//   return titleCase;
+// };
+// console.log(convertTitleCase('this is a nice title'));
+
+// const dogs = [
+//   { weight: 22, curFood: 250, owners: ['Alice', 'Bob'] },
+//   { weight: 8, curFood: 200, owners: ['Matilda'] },
+//   { weight: 22, curFood: 250, owners: ['Sarah', 'John'] },
+//   { weight: 22, curFood: 250, owners: ['Michael'] },
+// ];
+// dogs.forEach(dog => (dog.recFood = Math.trunc(dog.weight ** 0.75 * 28)));
+// console.log(dogs);
+
+// const dogSarah = gogs.find(dog => dog.owners.includes('Sarah'))
+// console.log(dogSarah)
+// console.log(`Sarsh's dog is eating ${dogSarah.curFood > dogSarah.recFood ? 'much' : 'little'} `)
+
+// const ownersEatTooMuch = dogs.filter(dog => dog.curFood > dog.recFood)
+
+// console.log(ownersEatTooMuch)
+
+console.log(BigInt(999 ** 99));
