@@ -3080,15 +3080,24 @@
 //   { weight: 22, curFood: 250, owners: ['Sarah', 'John'] },
 //   { weight: 22, curFood: 250, owners: ['Michael'] },
 // ];
-// dogs.forEach(dog => (dog.recFood = Math.trunc(dog.weight ** 0.75 * 28)));
-// console.log(dogs);
+dogs.forEach(dog => (dog.recFood = Math.trunc(dog.weight ** 0.75 * 28)));
+console.log(dogs);
 
-// const dogSarah = gogs.find(dog => dog.owners.includes('Sarah'))
-// console.log(dogSarah)
-// console.log(`Sarsh's dog is eating ${dogSarah.curFood > dogSarah.recFood ? 'much' : 'little'} `)
+const dogSarah = gogs.find(dog => dog.owners.includes('Sarah'));
+console.log(dogSarah);
+console.log(
+  `Sarsh's dog is eating ${
+    dogSarah.curFood > dogSarah.recFood ? 'much' : 'little'
+  } `
+);
 
-// const ownersEatTooMuch = dogs.filter(dog => dog.curFood > dog.recFood)
+const ownersEatTooMuch = dogs.filter(dog => dog.curFood > dog.recFood);
 
-// console.log(ownersEatTooMuch)
+console.log(ownersEatTooMuch);
 
 console.log(BigInt(999 ** 99));
+
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(future);
+console.log(future.getFullYear());
+console.log(future.getMonth());
