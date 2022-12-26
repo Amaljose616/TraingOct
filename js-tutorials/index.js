@@ -47,7 +47,58 @@ document
 message.style.backgroundColor = '#37383d';
 message.style.width = '120%';
 
-console.log(getComputedStyle(message).color);
+// console.log(getComputedStyle(message).color);
+// console.log(getComputedStyle(message).height);
+
+// message.style.height =
+//   Number.parseFloat(getComputedStyle(message).height, 10) + 40 + 'px';
+
+// document.documentElement.style.setProperty('--color-primary', 'orangered');
+
+// const logo = document.querySelector('.nav__logo');
+// console.log(logo.alt);
+// console.log(logo.src);
+
+const btnScrollTo = document.querySelector('.btn--scroll-to');
+const section1 = document.querySelector('#section--1');
+
+btnScrollTo.addEventListener('click', function (e) {
+  const s1coords = section1.getBoundingClientRect();
+  console.log(s1coords);
+  console.log(e.target.getBoundingClientRect());
+
+  console.log('Current scroll (X/Y)', window.pageXOffset, pageYOffset);
+
+  console.log(
+    'height/width viewport',
+    document.documentElement.clientHeight,
+    document.documentElement.clientWidth
+  );
+  // window.scrollTo(s1coords.left + window.pageXOffset,s1coords.top + window.pageYOffset)
+
+  //   window.scrollTo({
+  //    left : s1coords.left + window.pageXOffset,
+  //     top : s1coords.top + window.pageYOffset,
+  //     behavior:'smooth',
+
+  //   })
+});
+
+section1.scrollIntoView({ behavior: 'smooth' });
+
+const h1 = document.querySelector('h1');
+
+// h1.addEventListener('mouseenter',function(e){
+//   alert('addEventListener:Great! You are reading the heading')
+// })
+
+const alertH1 = function (e) {
+  alert('addEventListener:Great! You are reading the heading');
+};
+
+h1.addEventListener('mouseenter', alertH1);
+
+setTimeout(() => h1.removeEventListener('mouseenter', alertH1), 3000);
 // let count = 0
 // console.log (count)
 
@@ -3179,4 +3230,4 @@ console.log(getComputedStyle(message).color);
 //   console.log(now);
 // }, 1000);
 
-// console.log(new Date());
+// console.log(new Date())
