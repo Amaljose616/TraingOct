@@ -3101,3 +3101,42 @@
 // console.log(future);
 // console.log(future.getFullYear());
 // console.log(future.getMonth());
+
+// const future = new Date(2023, 5, 27, 15, 23);
+// console.log(future);
+// console.log(future.getFullYear());
+// console.log(future.getMonth());
+// console.log(future.getDate());
+// console.log(future.getDay());
+// console.log(future.getHours());
+// console.log(future.getMinutes());
+// console.log(future.getSeconds);
+// console.log(Date());
+// console.log(future.toISOString());
+// console.log(future.getTime());
+
+// console.log(new Date(2142256980000))
+
+// const future = new Date(2023, 5, 27, 15, 23);
+// console.log(+future);
+
+// const clacDaysPassed = (date1, date2) =>
+//   (date2 - date1) / (1000 * 60 * 60 * 24);
+
+// const days1 = clacDaysPassed(new Date(2023, 5, 27), new Date(2023, 5, 30));
+// console.log(days1);
+
+// const now = new Date();
+// labelDate.textContent = new Intl.DateTimeFormat('en-Us').format(now);
+
+// setInterval(function () {
+//   const now = new Date();
+//   console.log(now);
+// }, 1000);
+
+// console.log(new Date());
+
+setInterval(function () {
+  const anan = 'hi';
+  console.log(anan);
+}, 1000);
