@@ -7,3 +7,6 @@ if ((n - 1) % 3 === 0) {
 } else {
   console.log(`${n} is not in the series`);
 }
+class Account {
+  locale = navigator.language;
+}
