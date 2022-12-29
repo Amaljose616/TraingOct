@@ -1,7 +1,77 @@
-let me = prompt('hello who are you');
-console.log(me);
-let text = document.getElementById('demo');
-text.textContent = me;
+'use strict';
+
+class personCl {
+  constructor(firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+  }
+
+  calcAge() {
+    console.log(2037 - this.birthYear);
+  }
+  greet() {
+    console.log(`Hey ${this.firstName}`);
+  }
+}
+
+// const Car = function (make, speed) {
+//   this.make = make;
+//   this.speed = speed;
+// };
+
+// Car.prototype.accelarate = function () {
+//   this.speed += 10;
+//   console.log(`${this.make} is going at ${this.speed}`);
+// };
+
+// const bmw = new Car('BMW', 120);
+// const mercedes = new Car('Mercddes', 95);
+
+// bmw.accelarate();
+// bmw.accelarate();
+// bmw.accelarate();
+
+// const person = function (firstName, birthYear) {
+//   this.firstName = firstName;
+//   this.birthYear = birthYear;
+
+//   this.calcAge = function(){
+//     console.log(2037 - this.birthYear)
+//   }
+// };
+// const jonas = new person('jonas', 1991);
+// console.log(jonas);
+
+// const matilda = new person('Matilda',2017)
+// const jack = new person('jack',1975)
+
+// console.log(matilda,jack)
+// console.log(jonas instanceof person)
+
+// console.log(person.prototype)
+// person.prototype.calcAge = function(){
+//     console.log(2037 - this.birthYear)
+// }
+// jonas.calcAge()
+// matilda.calcAge()
+
+// console.log(jonas.__proto__)
+// console.log(jonas.__proto__=== person.prototype)
+
+// person.prototype.spceies = 'Homo sapiens'
+// console.log(jonas.spceies,matilda.spceies)
+
+// console.log(jonas.hasOwnProperty('firstName'))
+// console.log(jonas.hasOwnProperty('species'))
+
+// console.log(jonas.__proto__.__proto__)
+
+// console.log(person.prototype.constructor)
+// let me = prompt('hello who are you');
+
+// console.log(me);
+// let text = document.getElementById('demo');
+// text.textContent = me;
 // 'use strict';
 
 // const modal = document.querySelector('.modal');
