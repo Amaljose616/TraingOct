@@ -1,3 +1,23 @@
+(async function () {
+  const res = await Promise.race([
+    getJSON(`https://restcountries/rest/v2/name/italy`),
+    getJSON(`https://restcountries/rest/v2/name/egypt`),
+    getJSON(`https://restcountries/rest/v2/name/mexico`),
+  ]);
+  console.log(res[0]);
+})();
+
+const timeout = function (sec) {
+  return new Promise(function (_, rejecct) {
+    setTimeout(function () {
+      reject(new Error('Request took too long!'));
+    }, sec);
+  });
+};
+Promise.race([
+  getJSON(`https://restcountries/rest/v2/name/tanzania`),
+  timeout(1),
+]).then(res => console.log(res[0]).catch(err => console.error(err)));
 // const imgContainer = document.querySelector('.images');
 
 // const createImage = function (imgPath) {
@@ -60,6 +80,7 @@ try{
 }catch(err){
     alert(err.message)
 }
+
 // let n = 10;
 // let z = (n * (n - 1)) / 2;
 
