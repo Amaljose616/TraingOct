@@ -1,18 +1,73 @@
 'use strict';
+class CarCl {
 
-class personCl {
-  constructor(firstName, birthYear) {
-    this.firstName = firstName;
-    this.birthYear = birthYear;
-  }
+    constructor (make, speed) {
+      this.make = make;
+      this.speed = speed;
+    };
+    
+    accelarate() {
+      this.speed += 10;
+      console.log(`${this.make} is going at ${this.speed} km/hr`);
+    };
 
-  calcAge() {
-    console.log(2037 - this.birthYear);
-  }
-  greet() {
-    console.log(`Hey ${this.firstName}`);
-  }
+    break(){
+        this.speed -= 5
+        console.log(`${this.make} is going at ${this.speed} km/hr`)
+    }
+    get speedUS(){
+        return this.speed/1.6
+    }
+    set speedUS(speed){
+        this.speed = speed * 1.6
+    }
 }
+
+const ford = new CarCl('ford',120)
+console.log(ford.speedUS)
+ford.accelarate()
+                                                                                       
+                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+// class personCl {
+//   constructor(firstName, birthYear) {
+//     this.firstName = firstName;
+//     this.birthYear = birthYear;
+//   }
+
+//   calcAge() {
+//     console.log(2037 - this.birthYear);
+//   }
+//   greet() {
+//     console.log(`Hey ${this.firstName}`);
+//   }
+
+//   get age(){
+//     return 2037 - this.birthYear
+//   }
+// }
+
+// const jessica = new personCl('Jessica',1996)
+// console.log(jessica)
+// jessica.calcAge()
+// console.log(jessica.age)
+// console.log(jessica.__proto__ === personCl.prototype)
+// jessica.greet()
+
+// const account = {
+//     owner : 'Jonas',
+//     movements :[200,530,120,300],
+
+//    get latest(){
+//     return this.movements.slice(-1).pop()
+//    },
+//    set latest(mov){
+//     this.movements.push(mov)
+//    }
+// }
+// console.log(account.latest)
+// account.latest = 50
+// console.log(account.movements)
 
 // const Car = function (make, speed) {
 //   this.make = make;

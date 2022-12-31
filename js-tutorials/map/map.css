@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -26,9 +26,9 @@ body {
   align-items: center;
 }
 
-.countries {
-  /* margin-bottom: 8rem; */
-  display: flex;
+.countries { */
+/* margin-bottom: 8rem; */
+/* display: flex;
 
   font-size: 2rem;
   opacity: 0;
@@ -41,9 +41,9 @@ body {
   font-size: 1.8rem;
   width: 30rem;
   border-radius: 0.7rem;
-  margin: 0 3rem;
-  /* overflow: hidden; */
-}
+  margin: 0 3rem; */
+/* overflow: hidden; */
+/* }
 .country img {
   width: 100%;
 }
@@ -125,7 +125,7 @@ body {
   margin: 2rem;
   border: 3rem solid white;
   box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* :root {
   --color-brand--1: #ffb545;
