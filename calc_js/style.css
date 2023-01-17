@@ -1,0 +1,17 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  width: 1.8rem;
+  margin: 10px;
+}
+
+.num-clear {
+  width: 200px;
+}
