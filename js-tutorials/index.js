@@ -1945,3 +1945,6 @@
 //   const anan = 'hi';
 //   console.log(anan);
 // }, 1000);
+
+
+console.log(9 + 10)
